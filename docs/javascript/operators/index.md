@@ -2,8 +2,8 @@
 
 ## Contents
 
- * [math operations](./math-operations)
- * [unary operators](./unary-operations)
+ * [math operations](./#math-operations)
+ * [assignment operators](./#assignment-operations)
 
 ## Math Operations
 
@@ -48,9 +48,30 @@ Exponents are denoted using the operator `**`
 console.log(5**2); // displays 25
 ```
 
-### Increment and Decrement
-unlike other operators the increment and decrement operators must apply to a variable,
-as they change the value stored.
+## Assignment operations
+Assignment operators assign values to javascript variables
 
-#### Increment
-The increment operator increases the value of a variable by 1 
+### The = operator
+the simple assignment operator is `=`
+it's used to assign a value to a variable
+
+*example:*
+```js
+let x = 10;
+```
+
+### The += operator
+the `+=` operator adds a given value to a variable
+```js
+let x = 10;
+x += 5; // 15
+```
+
+### The -= operator
+The `-=` operator subtracts a given value from a variable
+```js
+let x = 10;
+x -= 5; // 5
+```
+
+### The 
