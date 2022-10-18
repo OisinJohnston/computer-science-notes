@@ -2,5 +2,5 @@
 
 ## 5th Year
 
-**[Javascript](/javascript/)**
+**[Javascript](./javascript/)**
 
