@@ -1,4 +1,4 @@
-# FOR LOOPS
+# For loops
 
 **Relavent webdocs found [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration#for_statement).**
 
