@@ -31,7 +31,22 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://oisinjohnston.github.io/computer-science-notes/javascript/operators/assignment-operations/</loc>
+         <lastmod>2022-10-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://oisinjohnston.github.io/computer-science-notes/javascript/operators/comparison-operations/</loc>
+         <lastmod>2022-10-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://oisinjohnston.github.io/computer-science-notes/javascript/operators/math-operations/</loc>
+         <lastmod>2022-10-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://oisinjohnston.github.io/computer-science-notes/javascript/operators/unary-operations/</loc>
          <lastmod>2022-10-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
