@@ -50,3 +50,5 @@ while (k<2) {
 	k++
 }
 ```
+## Exercises
+The exercises can be found [here](./exercises)
