@@ -1,53 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://notes.qwrky.dev/</loc>
-         <lastmod>2022-10-18</lastmod>
+         <loc>https://oisinjohnston.github.io/computer-science-notes/</loc>
+         <lastmod>2022-10-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://notes.qwrky.dev/javascript/</loc>
-         <lastmod>2022-10-18</lastmod>
+         <loc>https://oisinjohnston.github.io/computer-science-notes/javascript/</loc>
+         <lastmod>2022-10-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://notes.qwrky.dev/javascript/basics/</loc>
-         <lastmod>2022-10-18</lastmod>
+         <loc>https://oisinjohnston.github.io/computer-science-notes/javascript/basics/</loc>
+         <lastmod>2022-10-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://notes.qwrky.dev/javascript/for-loops/</loc>
-         <lastmod>2022-10-18</lastmod>
+         <loc>https://oisinjohnston.github.io/computer-science-notes/javascript/for-loops/</loc>
+         <lastmod>2022-10-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://notes.qwrky.dev/javascript/for-loops/exercises/</loc>
-         <lastmod>2022-10-18</lastmod>
+         <loc>https://oisinjohnston.github.io/computer-science-notes/javascript/for-loops/exercises/</loc>
+         <lastmod>2022-10-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://notes.qwrky.dev/javascript/operators/</loc>
-         <lastmod>2022-10-18</lastmod>
+         <loc>https://oisinjohnston.github.io/computer-science-notes/javascript/operators/</loc>
+         <lastmod>2022-10-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://notes.qwrky.dev/javascript/operators/assignment-operations/</loc>
-         <lastmod>2022-10-18</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://notes.qwrky.dev/javascript/operators/comparison-operations/</loc>
-         <lastmod>2022-10-18</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://notes.qwrky.dev/javascript/operators/math-operations/</loc>
-         <lastmod>2022-10-18</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://notes.qwrky.dev/javascript/operators/unary-operations/</loc>
-         <lastmod>2022-10-18</lastmod>
+         <loc>https://oisinjohnston.github.io/computer-science-notes/javascript/operators/comparison-operations/</loc>
+         <lastmod>2022-10-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

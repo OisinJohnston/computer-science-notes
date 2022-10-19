@@ -6,9 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         
-        <link rel="canonical" href="https://notes.qwrky.dev/javascript/operators/comparison-operations/">
+        <link rel="canonical" href="https://oisinjohnston.github.io/computer-science-notes/javascript/operators/comparison-operations/">
         <link rel="shortcut icon" href="../../../img/favicon.ico">
-        <title>Comparison Operations - Computer Science Notes</title>
+        <title>Comparison operations - Computer Science Notes</title>
         <link href="../../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../../css/base.css" rel="stylesheet">
@@ -77,19 +77,7 @@
 </li>
             
 <li>
-    <a href="../assignment-operations/" class="dropdown-item">Assignment Operations</a>
-</li>
-            
-<li>
-    <a href="./" class="dropdown-item active">Comparison Operations</a>
-</li>
-            
-<li>
-    <a href="../math-operations/" class="dropdown-item">Math Operations</a>
-</li>
-            
-<li>
-    <a href="../unary-operations/" class="dropdown-item">Unary Operations</a>
+    <a href="./" class="dropdown-item active">Comparison operations</a>
 </li>
     </ul>
   </li>
@@ -104,12 +92,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href="../assignment-operations/" class="nav-link">
+                                <a rel="prev" href="../" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="../math-operations/" class="nav-link">
+                                <a rel="next" class="nav-link disabled">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -131,8 +119,28 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#comparison-operations" class="nav-link">Comparison Operations</a>
+            <li class="nav-item" data-level="1"><a href="#comparison-operations" class="nav-link">Comparison operations</a>
               <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#the-equals-operator" class="nav-link">The equals operator (==)</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#the-less-than-operator" class="nav-link">The less than operator (&lt;)</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#the-greater-than-operator" class="nav-link">The greater than operator (&gt;)</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#the-less-than-or-equal-too-operator" class="nav-link">The less than or equal too operator (&lt;=)</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#the-greater-than-or-equal-too-operator" class="nav-link">The greater than or equal too operator (&gt;=)</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
               </ul>
             </li>
         </ul>
@@ -140,7 +148,40 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="comparison-operations">Comparison Operations</h1></div>
+<h1 id="comparison-operations">Comparison operations</h1>
+<p>Comparison operators are used to compare two values, they will always return a boolean</p>
+<h2 id="the-equals-operator">The equals operator (<code>==</code>)</h2>
+<p>The <code>==</code> operator is used to compare the two values on either side of the operator, if they are the same it will return true otherwise it will return false</p>
+<p><em>example:</em></p>
+<pre><code class="language-js">var x = 5==1 // x = false
+var y = 5==5 // y = true
+</code></pre>
+<h2 id="the-less-than-operator">The less than operator (<code>&lt;</code>)</h2>
+<p>The <code>&lt;</code> operator will check if the value on the left hand side is less than the value on the right hand side</p>
+<p><em>example:</em></p>
+<pre><code class="language-js">var x = 5&lt;3 // x = false
+var y = 3&lt;5 // y = true
+</code></pre>
+<h2 id="the-greater-than-operator">The greater than operator (<code>&gt;</code>)</h2>
+<p>The <code>&gt;</code> operator will check if the value on the left hand side is greater than the value on the right hand side </p>
+<p><em>example:</em></p>
+<pre><code class="language-js">var x = 5&gt;3 // x = true
+var y = 3&gt;5 // y = false
+</code></pre>
+<h2 id="the-less-than-or-equal-too-operator">The less than or equal too operator (<code>&lt;=</code>)</h2>
+<p>The <code>&lt;=</code> operator will check if the value on the left hand side is less than or equal too the value on the right hand side:</p>
+<p><em>example:</em></p>
+<pre><code class="language-js">var x = 5&lt;=3 // x = false
+var y = 5&lt;=5 // y = true
+var z = 3&lt;=5 // z = true
+</code></pre>
+<h2 id="the-greater-than-or-equal-too-operator">The greater than or equal too operator (<code>&gt;=</code>)</h2>
+<p>The <code>&gt;=</code> operator will check if the value on the left hand side is greater than or equal too the value on the right hand side:</p>
+<p><em>example</em></p>
+<pre><code class="language-js">var x = 5&gt;=3 // x = true
+var y = 5&gt;=5 // x = true
+var z = 3&gt;=5 // x = false
+</code></pre></div>
             </div>
         </div>
 
