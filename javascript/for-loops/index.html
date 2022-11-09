@@ -149,6 +149,10 @@
               <ul class="nav flex-column">
               </ul>
             </li>
+            <li class="nav-item" data-level="2"><a href="#continue-statements" class="nav-link">Continue statements</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
               </ul>
             </li>
         </ul>
@@ -198,11 +202,20 @@ while (k&lt;2) {
 <h2 id="break-statements">Break statements</h2>
 <p>Break statements are used to exit loops </p>
 <p><em>example of a for loop with a break statement</em></p>
-<pre><code class="language-js">let h = 0;
-console.log(&quot;Entering loop: &lt;br/&gt;&quot;)
+<pre><code class="language-js">console.log(&quot;entering loop&quot;)
 
 for(h=0;h&lt;20;h++) {
     if(h==5) break;
+    console.log(h)
+}
+</code></pre>
+<h2 id="continue-statements">Continue statements</h2>
+<p><code>continue</code> statements are used to skip the rest of this iteration</p>
+<p><em>example of a for loop with a continue statement</em></p>
+<pre><code class="language-js">console.log(&quot;entering loop&quot;)
+
+for (h=0;h&lt;20;h++) {
+    if (h==5) continue;
     console.log(h)
 }
 </code></pre></div>
