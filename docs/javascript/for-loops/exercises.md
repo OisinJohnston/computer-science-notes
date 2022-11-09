@@ -6,6 +6,7 @@ We were asked to complete the following exercises:
  2.  Write a for loop to calculate the factorial of n. [jump](./#exercise-2)
  3.  Write a for loop to allow someone to guess an 8 digit number. [jump](./#exercise-3)
  4.  Write a for loop to find the sum of every number from 1 to n. [jump](./#exercise-4)
+ 5.  Write a program to count the digits in an integer. [jump](./#exercise-5)
  
 
 ## Exercise 1
@@ -71,3 +72,5 @@ for (i=0; i<=n; i++) {
 }
 console.log(result)
 ```
+
+## Exercise 5
