@@ -58,11 +58,23 @@ Break statements are used to exit loops
 
 *example of a for loop with a break statement*
 ```js
-let h = 0;
-console.log("Entering loop: <br/>")
+console.log("entering loop")
 
 for(h=0;h<20;h++) {
     if(h==5) break;
+    console.log(h)
+}
+```
+
+## Continue statements
+`continue` statements are used to skip the rest of this iteration
+
+*example of a for loop with a continue statement*
+```js
+console.log("entering loop")
+
+for (h=0;h<20;h++) {
+    if (h==5) continue;
     console.log(h)
 }
 ```
