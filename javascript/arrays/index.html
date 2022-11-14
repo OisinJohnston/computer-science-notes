@@ -151,6 +151,14 @@
               <ul class="nav flex-column">
               </ul>
             </li>
+            <li class="nav-item" data-level="2"><a href="#changing-elements" class="nav-link">Changing Elements</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#appending-elements" class="nav-link">Appending Elements</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
               </ul>
             </li>
         </ul>
@@ -181,6 +189,25 @@ console.log(fruits[0]) // apples
 console.log(fruits[1]) // oranges
 console.log(fruits[2]) // bannanas
 console.log(fruits[3]) // undefined
+</code></pre>
+<h2 id="changing-elements">Changing Elements</h2>
+<p>To change an element in an array simply use the assignment operator <code>=</code> on the accessed element.
+if the element does not exist it will add the element to the array and fill the neccessary elements
+with undefined.</p>
+<p><em>example:</em></p>
+<pre><code class="language-js">let people = [&quot;Bob&quot;, &quot;Daniel&quot;, Dylan]
+people[3] = &quot;Robert&quot;
+console.log(people) // Bob,Daniel,Dylan,Robert
+
+people[8] = &quot;Gary&quot;
+
+console.log(people) // Bob,Daniel,Dylan,Robert,,,,,Gary
+</code></pre>
+<h2 id="appending-elements">Appending Elements</h2>
+<p>Youse the <code>push</code> method to append an element to the end of the array</p>
+<pre><code class="language-js">let array = [&quot;Bob&quot;, &quot;Dylan&quot;]
+array.append(&quot;Gerome&quot;)
+console.log(array) // Bob,Dylan,Gerome
 </code></pre></div>
             </div>
         </div>
