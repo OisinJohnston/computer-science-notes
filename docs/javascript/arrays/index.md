@@ -37,4 +37,34 @@ console.log(fruits[2]) // bannanas
 console.log(fruits[3]) // undefined
 ```
 
+## Changing Elements
+
+To change an element in an array simply use the assignment operator `=` on the accessed element.
+if the element does not exist it will add the element to the array and fill the neccessary elements
+with undefined.
+
+*example:*
+```js
+let people = ["Bob", "Daniel", Dylan]
+people[3] = "Robert"
+console.log(people) // Bob,Daniel,Dylan,Robert
+
+people[8] = "Gary"
+
+console.log(people) // Bob,Daniel,Dylan,Robert,,,,,Gary
+```
+
+## Appending Elements
+
+Youse the `push` method to append an element to the end of the array
+
+```js
+let array = ["Bob", "Dylan"]
+array.append("Gerome")
+console.log(array) // Bob,Dylan,Gerome
+```
+
+
+
+
 
