@@ -56,13 +56,45 @@ console.log(people) // Bob,Daniel,Dylan,Robert,,,,,Gary
 
 ## Appending Elements
 
-Youse the `push` method to append an element to the end of the array
+use the `push` method to append an element to the end of the array
 
 ```js
 let array = ["Bob", "Dylan"]
 array.append("Gerome")
 console.log(array) // Bob,Dylan,Gerome
 ```
+
+## Looping Elements
+
+You can use a for loop to loop over the elements in an array.
+simply loop over all the indices and then access the elements in the array
+
+*example:*
+```js
+let pets = ["cat", "dog", "hamster"]
+
+for(let i=0; i<pets.length; i++) {
+    console.log(pets[i])
+}
+/* Output: 
+ * cat
+ * dog
+ * hamster
+ */
+```
+
+you can also use this to assign elements to an array
+
+*example:*
+```js
+let numbers = []
+
+for(let i=0; i<10; i++) {
+    numbers[i] = i
+}
+console.log(numbers) // 0,1,2,...,8,9
+```
+
 
 
 
