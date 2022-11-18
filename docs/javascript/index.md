@@ -5,3 +5,5 @@
 * **[operators](./operators)**
 
 * **[for loops](./for-loops)**
+
+* **[arrays](./arrays)**
