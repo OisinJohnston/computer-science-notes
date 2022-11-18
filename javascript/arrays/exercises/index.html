@@ -163,6 +163,14 @@
               <ul class="nav flex-column">
               </ul>
             </li>
+            <li class="nav-item" data-level="2"><a href="#exercise-5" class="nav-link">Exercise 5:</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#exercise-6" class="nav-link">Exercise 6</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
               </ul>
             </li>
         </ul>
@@ -223,7 +231,41 @@ for(let i = 0; i&lt;array.length; i++) {
         min = array[i]
     }
 }
+console.log(&quot;min: &quot;+min)
+console.log(&quot;max:&quot;+max)
+</code></pre>
+<h2 id="exercise-5">Exercise 5:</h2>
+<p>Write a program to find the second largest element in an array</p>
+<p><em>example:</em></p>
+<pre><code class="language-js">let array = [];
+array.push(-2, -1, 0, 1, 2, 3, 4);
 
+let max = array[0]
+let answer = array[0]
+
+for(let i = 0; i&lt;array.length; i++) {
+    if (array[i]&gt;max) {
+        answer = max
+        max = array[i]
+    }
+}
+console.log(answer)
+</code></pre>
+<h2 id="exercise-6">Exercise 6</h2>
+<p>Write a program to count the total number of even and odd elements in the array</p>
+<pre><code class="language-js">let array = [];
+array.push(-2, -1, 0, 1, 2, 3, 4);
+
+let odd = 0
+let even = 0
+
+for(let i=0; i&lt;array.length; i++) {
+    if (array[i]%2==0) even += 1;
+    else odd += 1
+}
+
+console.log(&quot;even: &quot;+even)
+console.log(&quot;odd: &quot;+odd)
 </code></pre></div>
             </div>
         </div>
