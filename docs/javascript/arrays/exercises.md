@@ -108,7 +108,25 @@ console.log("odd: "+odd)
 ```
 
 ## Exercise 7
+Write a program to copy all elements from an array to another array.
+```js
+let array = [];
+array.push(-2, -1, 0, 1, 2, 3, 4);
+let newarray = [...array]
+```
 
+## Exercise 8
+Write a program to add an element to the end of an array
+```js
+let array = [-2, -1, 0, 1, 2, 3, 4];
+array.push(5);
+console.log(array)
+```
 
-
-
+## Exercise 9
+Write a program to delete an element from the end of an array
+```js
+let array = [-1,0,2,3,4,5]
+array.pop()
+console.log(array)
+```
