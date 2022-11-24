@@ -2,5 +2,6 @@
 
 ## 5th Year
 
-**[Javascript](./javascript/)**
+* **[Javascript](./javascript/)**
+* **[Computational Thinking](./computational_thinking/)**
 
