@@ -185,6 +185,15 @@
             </li>
               </ul>
             </li>
+            
+            <li class="nav-item" data-level="1"><a href="#additional-exercises" class="nav-link">Additional Exercises</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#exercise-1_1" class="nav-link">Exercise 1:</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
         </ul>
     </div>
 </div></div>
@@ -296,6 +305,21 @@ console.log(array)
 <pre><code class="language-js">let array = [-1,0,2,3,4,5]
 array.pop()
 console.log(array)
+</code></pre>
+<h1 id="additional-exercises">Additional Exercises</h1>
+<h2 id="exercise-1_1">Exercise 1:</h2>
+<p>Remove all the duplicates from an array by copying unique values to a new array</p>
+<pre><code class="language-js">myArray = [0,1, 1, 2, 3, 4, 543, 243, 543, 0, 1, 1, 2]
+result = []
+
+for (i=0; i&lt;myArray.length; i++) {
+    if (result.includes(myArray[i])) {
+        continue
+    }
+    result.push(myArray[i])
+}
+
+console.log(result)
 </code></pre></div>
             </div>
         </div>
