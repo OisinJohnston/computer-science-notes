@@ -130,3 +130,23 @@ let array = [-1,0,2,3,4,5]
 array.pop()
 console.log(array)
 ```
+
+
+# Additional Exercises
+
+## Exercise 1:
+Remove all the duplicates from an array by copying unique values to a new array
+
+```js
+myArray = [0,1, 1, 2, 3, 4, 543, 243, 543, 0, 1, 1, 2]
+result = []
+
+for (i=0; i<myArray.length; i++) {
+    if (result.includes(myArray[i])) {
+        continue
+    }
+    result.push(myArray[i])
+}
+
+console.log(result)
+```
