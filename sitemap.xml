@@ -6,6 +6,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://oisinjohnston.github.io/computer-science-notes/computational_thinking/</loc>
+         <lastmod>2022-11-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://oisinjohnston.github.io/computer-science-notes/javascript/</loc>
          <lastmod>2022-11-24</lastmod>
          <changefreq>daily</changefreq>
