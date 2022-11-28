@@ -74,3 +74,39 @@ Ways of describing algorithms:
  * Psuedocode: a mix of programming language and everyday language to describe instructions less formally than using a programming language
  * Using maths.
 
+# Flowcharts
+
+flowcharts are an excellent way of communicating the logic of a program, they are easy and efficient to analyse the problems 
+
+However they are difficult to draw for large/complex programs, if changes are made the  flowchart will need to be redrawn.
+
+Rules for creating flowcharts:
+
+ * Flowcharts must have a start and an end
+
+*All The symbols in a flowchart:*
+
+![](https://wcs.smartdraw.com/flowchart/img/basic-symbols-table.jpg?bn=15100111857)
+
+*A simple flowchart for if statements:*
+![](https://beginnersbook.com/wp-content/uploads/2017/09/If_else_flow_diagram_C.jpg)
+
+*A simple flowchart for if-else statements:*
+![](https://uploads-ssl.webflow.com/6184b461a39ff1011f8c0582/620239fdd8763fe2a551f490_If-else%20Flowchart.png)
+
+*A simple flowchart for if-elif-elif-else statements:*
+![](https://media.geeksforgeeks.org/wp-content/uploads/20220324151941/ifelseifladderflowchartmin.jpg)
+
+
+
+``` mermaid
+
+graph LR
+  A[Start] --> B{Error?};
+  B -->|Yes| C[Hmm...];
+  C --> D[Debug];
+  D --> B;
+  B ---->|No| E[Yay!];
+```
+
+
