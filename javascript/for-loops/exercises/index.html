@@ -195,55 +195,55 @@
 <h2 id="exercise-1">Exercise 1</h2>
 <p><strong>Instructions:</strong> 
 Write a for loop to print all odd numbers up to and including n</p>
-<p><strong>Answer:</strong></p>
-<pre><code class="language-js">var n = 10
-for (var i = 0; i&lt;=n; i++) {
-    if (i%2!=0) {
-        console.log(i)
-    }
-}
-</code></pre>
+<p><strong>Answer:</strong>
+<div class="highlight"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="nx">n</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">10</span><span class="w"></span>
+<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">var</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">&lt;=</span><span class="nx">n</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">i</span><span class="o">%</span><span class="mf">2</span><span class="o">!=</span><span class="mf">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">i</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div></p>
 <h2 id="exercise-2">Exercise 2</h2>
 <p><strong>Instructions:</strong> 
 Write a for loop to calculate the factorial of n</p>
-<p><strong>Answer:</strong></p>
-<pre><code class="language-js">var n = 5;
-var result = 1;
-for (var i = 1; i&lt;=n; i++) {
-    result *= i;
-}
-console.log(result);
-</code></pre>
+<p><strong>Answer:</strong>
+<div class="highlight"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="nx">n</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">5</span><span class="p">;</span><span class="w"></span>
+<span class="kd">var</span><span class="w"> </span><span class="nx">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1</span><span class="p">;</span><span class="w"></span>
+<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">var</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">&lt;=</span><span class="nx">n</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nx">result</span><span class="w"> </span><span class="o">*=</span><span class="w"> </span><span class="nx">i</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">result</span><span class="p">);</span><span class="w"></span>
+</code></pre></div></p>
 <h2 id="exercise-3">Exercise 3</h2>
 <p><strong>Instructions:</strong> 
 Write a for loop to allow someone to guess an 8 digit number. They should get four guesses
 and the program should print “That is correct” if they enter the correct number and “That is
 incorrect” if they enter an incorrect number. The program should stop if the user enters the
 correct number.</p>
-<p><strong>Answer:</strong></p>
-<pre><code class="language-js">var guesses = 4;
-var number = 12345678;
+<p><strong>Answer:</strong>
+<div class="highlight"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="nx">guesses</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">4</span><span class="p">;</span><span class="w"></span>
+<span class="kd">var</span><span class="w"> </span><span class="nx">number</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">12345678</span><span class="p">;</span><span class="w"></span>
 
-for (i=1; i&lt;=guesses; i++) {
-    let guess = Number(prompt(&quot;Enter your guess: &quot;));
-    if (guess == number) {
-        alert(&quot;That is correct&quot;);
-        break;
-    }
-    alert(&quot;That is incorrect&quot;)
-}
-</code></pre>
+<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="nx">i</span><span class="o">=</span><span class="mf">1</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">&lt;=</span><span class="nx">guesses</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="nx">guess</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">Number</span><span class="p">(</span><span class="nx">prompt</span><span class="p">(</span><span class="s2">&quot;Enter your guess: &quot;</span><span class="p">));</span><span class="w"></span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">guess</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nx">number</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;That is correct&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w">        </span><span class="k">break</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;That is incorrect&quot;</span><span class="p">)</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div></p>
 <h2 id="exercise-4">Exercise 4</h2>
 <p><strong>Instructions:</strong>
 Write a for loop to find the sum of every number from 1 to n.</p>
-<p><strong>Answer:</strong></p>
-<pre><code class="language-js">var n = 10;
-var result = 0;
-for (i=0; i&lt;=n; i++) {
-    result += i
-}
-console.log(result)
-</code></pre>
+<p><strong>Answer:</strong>
+<div class="highlight"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="nx">n</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">10</span><span class="p">;</span><span class="w"></span>
+<span class="kd">var</span><span class="w"> </span><span class="nx">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"></span>
+<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="nx">i</span><span class="o">=</span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">&lt;=</span><span class="nx">n</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nx">result</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="nx">i</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">result</span><span class="p">)</span><span class="w"></span>
+</code></pre></div></p>
 <h2 id="exercise-5">Exercise 5</h2></div>
             </div>
         </div>

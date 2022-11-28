@@ -166,6 +166,11 @@
             </li>
               </ul>
             </li>
+            
+            <li class="nav-item" data-level="1"><a href="#flowcharts" class="nav-link">Flowcharts</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
         </ul>
     </div>
 </div></div>
@@ -225,7 +230,29 @@ Each step must be so precisely defines that it can be translated into a programm
  * Natural language: Write out or verbally express a list of steps
  * Flowcharts: draw each step and show the flow of control
  * Psuedocode: a mix of programming language and everyday language to describe instructions less formally than using a programming language
- * Using maths.</p></div>
+ * Using maths.</p>
+<h1 id="flowcharts">Flowcharts</h1>
+<p>flowcharts are an excellent way of communicating the logic of a program, they are easy and efficient to analyse the problems </p>
+<p>However they are difficult to draw for large/complex programs, if changes are made the  flowchart will need to be redrawn.</p>
+<p>Rules for creating flowcharts:</p>
+<ul>
+<li>Flowcharts must have a start and an end</li>
+</ul>
+<p><em>All The symbols in a flowchart:</em></p>
+<p><img alt="" src="https://wcs.smartdraw.com/flowchart/img/basic-symbols-table.jpg?bn=15100111857" /></p>
+<p><em>A simple flowchart for if statements:</em>
+<img alt="" src="https://beginnersbook.com/wp-content/uploads/2017/09/If_else_flow_diagram_C.jpg" /></p>
+<p><em>A simple flowchart for if-else statements:</em>
+<img alt="" src="https://uploads-ssl.webflow.com/6184b461a39ff1011f8c0582/620239fdd8763fe2a551f490_If-else%20Flowchart.png" /></p>
+<p><em>A simple flowchart for if-elif-elif-else statements:</em>
+<img alt="" src="https://media.geeksforgeeks.org/wp-content/uploads/20220324151941/ifelseifladderflowchartmin.jpg" /></p>
+<pre class="mermaid-experimental"><code>
+graph LR
+  A[Start] --&gt; B{Error?};
+  B --&gt;|Yes| C[Hmm...];
+  C --&gt; D[Debug];
+  D --&gt; B;
+  B ----&gt;|No| E[Yay!];</code></pre></div>
             </div>
         </div>
 
