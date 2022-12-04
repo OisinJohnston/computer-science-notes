@@ -89,24 +89,49 @@ Rules for creating flowcharts:
 ![](https://wcs.smartdraw.com/flowchart/img/basic-symbols-table.jpg?bn=15100111857)
 
 *A simple flowchart for if statements:*
-![](https://beginnersbook.com/wp-content/uploads/2017/09/If_else_flow_diagram_C.jpg)
+
+```puml
+@startuml
+start
+if (condition) then (true)
+    :Code inside if statement;
+else (false)
+endif
+:Code outside if statement;
+stop
+@enduml
+```
 
 *A simple flowchart for if-else statements:*
-![](https://uploads-ssl.webflow.com/6184b461a39ff1011f8c0582/620239fdd8763fe2a551f490_If-else%20Flowchart.png)
+```puml
+@startuml
+start
+if (condition) then (true)
+    :Code inside if statement;
+else (false)
+    :Code in else statement;
+endif
+stop
+@enduml
+```
 
 *A simple flowchart for if-elif-elif-else statements:*
-![](https://media.geeksforgeeks.org/wp-content/uploads/20220324151941/ifelseifladderflowchartmin.jpg)
-
-
-
-``` mermaid
-
-graph LR
-  A[Start] --> B{Error?};
-  B -->|Yes| C[Hmm...];
-  C --> D[Debug];
-  D --> B;
-  B ---->|No| E[Yay!];
+```puml
+@startuml
+!pragma useVerticalIf on
+start
+if (condition1) then (true)
+    :Code in if block;
+(false) elseif (condition2) then (true)
+    :Code in first else if block;
+(false) elseif (condition3) then (true)
+    :Code in second else if block;
+else (false)
+    :Code in else block;
+endif
+stop
+@enduml
 ```
+
 
 

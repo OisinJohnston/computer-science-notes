@@ -1,11 +1,8 @@
 site_name: "Computer Science Notes"
 site_url:  "https://oisinjohnston.github.io/computer-science-notes/"
 
-markdown_extensions:
-  - pymdownx.superfences:
-      custom_fences:
-        - name: mermaid
-          class: mermaid-experimental
-          format: !!python/name:pymdownx.superfences.fence_code_format
-
+plugins:
+  - plantuml:
+      puml_url: https://www.plantuml.com/plantuml/
+      num_worker: 8
 
