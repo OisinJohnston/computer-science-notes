@@ -5,3 +5,5 @@
 * **[operators](./operators)**
 
 * **[for loops](./for-loops)**
+
+* **[if statements](./if-statements)**
