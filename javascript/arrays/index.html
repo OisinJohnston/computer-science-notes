@@ -121,11 +121,6 @@
                         </ul>
 
                     <ul class="nav navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
-                                <i class="fa fa-search"></i> Search
-                            </a>
-                        </li>
                             <li class="nav-item">
                                 <a rel="prev" href="../" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
@@ -188,11 +183,11 @@
 <p>It stores a sequential collection of elements.</p>
 <h2 id="declaration">Declaration</h2>
 <p>To declare an array you can use the <code>Array</code> constructor like this:</p>
-<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">myArray</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Array</span><span class="p">(</span><span class="s2">&quot;apples&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;oranges&quot;</span><span class="p">)</span><span class="w"></span>
-</code></pre></div>
+<pre><code class="language-js">let myArray = new Array(&quot;apples&quot;, &quot;oranges&quot;)
+</code></pre>
 <p>or simply use <code>[]</code>:</p>
-<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">myArray</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;apples&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;oranges&quot;</span><span class="p">]</span><span class="w"></span>
-</code></pre></div>
+<pre><code class="language-js">let myArray = [&quot;apples&quot;, &quot;oranges&quot;]
+</code></pre>
 <p>it is reccomended that you use <code>[]</code> as it is more consistent across languages
 and a good idea to gety use to that syntax.</p>
 <h2 id="accessing-elements">Accessing Elements</h2>
@@ -200,56 +195,56 @@ and a good idea to gety use to that syntax.</p>
 a given index in an array, all arrays are 0-indexed in javascript meaning the index of the first element in the array will be
 <code>0</code>.</p>
 <p>if you try to access an index that does not exist it will return undefined.</p>
-<p><em>example:</em>
-<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">fruits</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;apples&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;oranges&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;bannanas&quot;</span><span class="p">]</span><span class="w"></span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">fruits</span><span class="p">[</span><span class="mf">0</span><span class="p">])</span><span class="w"> </span><span class="c1">// apples</span><span class="w"></span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">fruits</span><span class="p">[</span><span class="mf">1</span><span class="p">])</span><span class="w"> </span><span class="c1">// oranges</span><span class="w"></span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">fruits</span><span class="p">[</span><span class="mf">2</span><span class="p">])</span><span class="w"> </span><span class="c1">// bannanas</span><span class="w"></span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">fruits</span><span class="p">[</span><span class="mf">3</span><span class="p">])</span><span class="w"> </span><span class="c1">// undefined</span><span class="w"></span>
-</code></pre></div></p>
+<p><em>example:</em></p>
+<pre><code class="language-js">let fruits = [&quot;apples&quot;, &quot;oranges&quot;, &quot;bannanas&quot;]
+console.log(fruits[0]) // apples
+console.log(fruits[1]) // oranges
+console.log(fruits[2]) // bannanas
+console.log(fruits[3]) // undefined
+</code></pre>
 <h2 id="changing-elements">Changing Elements</h2>
 <p>To change an element in an array simply use the assignment operator <code>=</code> on the accessed element.
 if the element does not exist it will add the element to the array and fill the neccessary elements
 with undefined.</p>
-<p><em>example:</em>
-<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">people</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;Bob&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Daniel&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">Dylan</span><span class="p">]</span><span class="w"></span>
-<span class="nx">people</span><span class="p">[</span><span class="mf">3</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Robert&quot;</span><span class="w"></span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">people</span><span class="p">)</span><span class="w"> </span><span class="c1">// Bob,Daniel,Dylan,Robert</span><span class="w"></span>
+<p><em>example:</em></p>
+<pre><code class="language-js">let people = [&quot;Bob&quot;, &quot;Daniel&quot;, Dylan]
+people[3] = &quot;Robert&quot;
+console.log(people) // Bob,Daniel,Dylan,Robert
 
-<span class="nx">people</span><span class="p">[</span><span class="mf">8</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Gary&quot;</span><span class="w"></span>
+people[8] = &quot;Gary&quot;
 
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">people</span><span class="p">)</span><span class="w"> </span><span class="c1">// Bob,Daniel,Dylan,Robert,,,,,Gary</span><span class="w"></span>
-</code></pre></div></p>
+console.log(people) // Bob,Daniel,Dylan,Robert,,,,,Gary
+</code></pre>
 <h2 id="appending-elements">Appending Elements</h2>
 <p>use the <code>push</code> method to append an element to the end of the array</p>
-<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">array</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;Bob&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Dylan&quot;</span><span class="p">]</span><span class="w"></span>
-<span class="nx">array</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="s2">&quot;Gerome&quot;</span><span class="p">)</span><span class="w"></span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">array</span><span class="p">)</span><span class="w"> </span><span class="c1">// Bob,Dylan,Gerome</span><span class="w"></span>
-</code></pre></div>
+<pre><code class="language-js">let array = [&quot;Bob&quot;, &quot;Dylan&quot;]
+array.append(&quot;Gerome&quot;)
+console.log(array) // Bob,Dylan,Gerome
+</code></pre>
 <h2 id="looping-elements">Looping Elements</h2>
 <p>You can use a for loop to loop over the elements in an array.
 simply loop over all the indices and then access the elements in the array</p>
-<p><em>example:</em>
-<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">pets</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;cat&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;dog&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;hamster&quot;</span><span class="p">]</span><span class="w"></span>
+<p><em>example:</em></p>
+<pre><code class="language-js">let pets = [&quot;cat&quot;, &quot;dog&quot;, &quot;hamster&quot;]
 
-<span class="k">for</span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">i</span><span class="o">=</span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">&lt;</span><span class="nx">pets</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">pets</span><span class="p">[</span><span class="nx">i</span><span class="p">])</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
-<span class="cm">/* Output: </span>
-<span class="cm"> * cat</span>
-<span class="cm"> * dog</span>
-<span class="cm"> * hamster</span>
-<span class="cm"> */</span><span class="w"></span>
-</code></pre></div></p>
+for(let i=0; i&lt;pets.length; i++) {
+    console.log(pets[i])
+}
+/* Output: 
+ * cat
+ * dog
+ * hamster
+ */
+</code></pre>
 <p>you can also use this to assign elements to an array</p>
-<p><em>example:</em>
-<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">numbers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[]</span><span class="w"></span>
+<p><em>example:</em></p>
+<pre><code class="language-js">let numbers = []
 
-<span class="k">for</span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">i</span><span class="o">=</span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">&lt;</span><span class="mf">10</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="nx">numbers</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">i</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numbers</span><span class="p">)</span><span class="w"> </span><span class="c1">// 0,1,2,...,8,9</span><span class="w"></span>
-</code></pre></div></p></div>
+for(let i=0; i&lt;10; i++) {
+    numbers[i] = i
+}
+console.log(numbers) // 0,1,2,...,8,9
+</code></pre></div>
             </div>
         </div>
 
@@ -262,29 +257,8 @@ simply loop over all the indices and then access the elements in the array</p>
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
         <script src="../../js/base.js" defer></script>
-        <script src="../../search/main.js" defer></script>
 
-        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="searchModalLabel">Search</h4>
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-            </div>
-            <div class="modal-body">
-                <p>From here you can search these documents. Enter your search terms below.</p>
-                <form>
-                    <div class="form-group">
-                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
-                    </div>
-                </form>
-                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
-            </div>
-            <div class="modal-footer">
-            </div>
-        </div>
-    </div>
-</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+        <div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">

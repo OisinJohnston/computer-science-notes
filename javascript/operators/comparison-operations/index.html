@@ -121,11 +121,6 @@
                         </ul>
 
                     <ul class="nav navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
-                                <i class="fa fa-search"></i> Search
-                            </a>
-                        </li>
                             <li class="nav-item">
                                 <a rel="prev" href="../assignment-operations/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
@@ -187,36 +182,36 @@
 <p>Comparison operators are used to compare two values, they will always return a boolean</p>
 <h2 id="the-equals-operator">The equals operator (<code>==</code>)</h2>
 <p>The <code>==</code> operator is used to compare the two values on either side of the operator, if they are the same it will return true otherwise it will return false</p>
-<p><em>example:</em>
-<div class="highlight"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="nx">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">5</span><span class="o">==</span><span class="mf">1</span><span class="w"> </span><span class="c1">// x = false</span><span class="w"></span>
-<span class="kd">var</span><span class="w"> </span><span class="nx">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">5</span><span class="o">==</span><span class="mf">5</span><span class="w"> </span><span class="c1">// y = true</span><span class="w"></span>
-</code></pre></div></p>
+<p><em>example:</em></p>
+<pre><code class="language-js">var x = 5==1 // x = false
+var y = 5==5 // y = true
+</code></pre>
 <h2 id="the-less-than-operator">The less than operator (<code>&lt;</code>)</h2>
 <p>The <code>&lt;</code> operator will check if the value on the left hand side is less than the value on the right hand side</p>
-<p><em>example:</em>
-<div class="highlight"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="nx">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">5</span><span class="o">&lt;</span><span class="mf">3</span><span class="w"> </span><span class="c1">// x = false</span><span class="w"></span>
-<span class="kd">var</span><span class="w"> </span><span class="nx">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">3</span><span class="o">&lt;</span><span class="mf">5</span><span class="w"> </span><span class="c1">// y = true</span><span class="w"></span>
-</code></pre></div></p>
+<p><em>example:</em></p>
+<pre><code class="language-js">var x = 5&lt;3 // x = false
+var y = 3&lt;5 // y = true
+</code></pre>
 <h2 id="the-greater-than-operator">The greater than operator (<code>&gt;</code>)</h2>
 <p>The <code>&gt;</code> operator will check if the value on the left hand side is greater than the value on the right hand side </p>
-<p><em>example:</em>
-<div class="highlight"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="nx">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">5</span><span class="o">&gt;</span><span class="mf">3</span><span class="w"> </span><span class="c1">// x = true</span><span class="w"></span>
-<span class="kd">var</span><span class="w"> </span><span class="nx">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">3</span><span class="o">&gt;</span><span class="mf">5</span><span class="w"> </span><span class="c1">// y = false</span><span class="w"></span>
-</code></pre></div></p>
+<p><em>example:</em></p>
+<pre><code class="language-js">var x = 5&gt;3 // x = true
+var y = 3&gt;5 // y = false
+</code></pre>
 <h2 id="the-less-than-or-equal-too-operator">The less than or equal too operator (<code>&lt;=</code>)</h2>
 <p>The <code>&lt;=</code> operator will check if the value on the left hand side is less than or equal too the value on the right hand side:</p>
-<p><em>example:</em>
-<div class="highlight"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="nx">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">5</span><span class="o">&lt;=</span><span class="mf">3</span><span class="w"> </span><span class="c1">// x = false</span><span class="w"></span>
-<span class="kd">var</span><span class="w"> </span><span class="nx">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">5</span><span class="o">&lt;=</span><span class="mf">5</span><span class="w"> </span><span class="c1">// y = true</span><span class="w"></span>
-<span class="kd">var</span><span class="w"> </span><span class="nx">z</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">3</span><span class="o">&lt;=</span><span class="mf">5</span><span class="w"> </span><span class="c1">// z = true</span><span class="w"></span>
-</code></pre></div></p>
+<p><em>example:</em></p>
+<pre><code class="language-js">var x = 5&lt;=3 // x = false
+var y = 5&lt;=5 // y = true
+var z = 3&lt;=5 // z = true
+</code></pre>
 <h2 id="the-greater-than-or-equal-too-operator">The greater than or equal too operator (<code>&gt;=</code>)</h2>
 <p>The <code>&gt;=</code> operator will check if the value on the left hand side is greater than or equal too the value on the right hand side:</p>
-<p><em>example</em>
-<div class="highlight"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="nx">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">5</span><span class="o">&gt;=</span><span class="mf">3</span><span class="w"> </span><span class="c1">// x = true</span><span class="w"></span>
-<span class="kd">var</span><span class="w"> </span><span class="nx">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">5</span><span class="o">&gt;=</span><span class="mf">5</span><span class="w"> </span><span class="c1">// x = true</span><span class="w"></span>
-<span class="kd">var</span><span class="w"> </span><span class="nx">z</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">3</span><span class="o">&gt;=</span><span class="mf">5</span><span class="w"> </span><span class="c1">// x = false</span><span class="w"></span>
-</code></pre></div></p></div>
+<p><em>example</em></p>
+<pre><code class="language-js">var x = 5&gt;=3 // x = true
+var y = 5&gt;=5 // x = true
+var z = 3&gt;=5 // x = false
+</code></pre></div>
             </div>
         </div>
 
@@ -229,29 +224,8 @@
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
         <script src="../../../js/base.js" defer></script>
-        <script src="../../../search/main.js" defer></script>
 
-        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="searchModalLabel">Search</h4>
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-            </div>
-            <div class="modal-body">
-                <p>From here you can search these documents. Enter your search terms below.</p>
-                <form>
-                    <div class="form-group">
-                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
-                    </div>
-                </form>
-                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
-            </div>
-            <div class="modal-footer">
-            </div>
-        </div>
-    </div>
-</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+        <div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">

@@ -121,11 +121,6 @@
                         </ul>
 
                     <ul class="nav navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
-                                <i class="fa fa-search"></i> Search
-                            </a>
-                        </li>
                             <li class="nav-item">
                                 <a rel="prev" href="../" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
@@ -192,34 +187,34 @@
 <h2 id="the-operator">The = operator</h2>
 <p>the simple assignment operator is <code>=</code>
 it's used to assign a value to a variable</p>
-<p><em>example:</em>
-<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">10</span><span class="p">;</span><span class="w"></span>
-</code></pre></div></p>
+<p><em>example:</em></p>
+<pre><code class="language-js">let x = 10;
+</code></pre>
 <h2 id="the-operator_1">The += operator</h2>
-<p>the <code>+=</code> operator adds a given value to a variable
-<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">10</span><span class="p">;</span><span class="w"></span>
-<span class="nx">x</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="mf">5</span><span class="p">;</span><span class="w"> </span><span class="c1">// 15</span><span class="w"></span>
-</code></pre></div></p>
+<p>the <code>+=</code> operator adds a given value to a variable</p>
+<pre><code class="language-js">let x = 10;
+x += 5; // 15
+</code></pre>
 <h2 id="the-operator_2">The -= operator</h2>
-<p>The <code>-=</code> operator subtracts a given value from a variable
-<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">10</span><span class="p">;</span><span class="w"></span>
-<span class="nx">x</span><span class="w"> </span><span class="o">-=</span><span class="w"> </span><span class="mf">5</span><span class="p">;</span><span class="w"> </span><span class="c1">// 5</span><span class="w"></span>
-</code></pre></div></p>
+<p>The <code>-=</code> operator subtracts a given value from a variable</p>
+<pre><code class="language-js">let x = 10;
+x -= 5; // 5
+</code></pre>
 <h2 id="the-operator_3">The *= operator</h2>
-<p>The <code>*=</code> operator multiplies a given value to a variable
-<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">10</span><span class="p">;</span><span class="w"></span>
-<span class="nx">x</span><span class="w"> </span><span class="o">*=</span><span class="w"> </span><span class="mf">10</span><span class="p">;</span><span class="w"> </span><span class="c1">// 100</span><span class="w"></span>
-</code></pre></div></p>
+<p>The <code>*=</code> operator multiplies a given value to a variable</p>
+<pre><code class="language-js">let x = 10;
+x *= 10; // 100
+</code></pre>
 <h2 id="the-operator_4">The /= operator</h2>
-<p>The <code>/=</code> operator divides a given value to a variable
-<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">10</span><span class="p">;</span><span class="w"></span>
-<span class="nx">x</span><span class="w"> </span><span class="o">/=</span><span class="w"> </span><span class="mf">5</span><span class="p">;</span><span class="w"> </span><span class="c1">// 2</span><span class="w"></span>
-</code></pre></div></p>
+<p>The <code>/=</code> operator divides a given value to a variable</p>
+<pre><code class="language-js">let x = 10;
+x /= 5; // 2
+</code></pre>
 <h2 id="the-operator_5">The **= operator</h2>
-<p>The <code>**=</code> operator puts a given value to the power of a variable
-<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">8</span><span class="p">;</span><span class="w"></span>
-<span class="nx">x</span><span class="w"> </span><span class="o">**=</span><span class="w"> </span><span class="mf">2</span><span class="p">;</span><span class="w"> </span><span class="c1">// 64</span><span class="w"></span>
-</code></pre></div></p></div>
+<p>The <code>**=</code> operator puts a given value to the power of a variable</p>
+<pre><code class="language-js">let x = 8;
+x **= 2; // 64
+</code></pre></div>
             </div>
         </div>
 
@@ -232,29 +227,8 @@ it's used to assign a value to a variable</p>
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
         <script src="../../../js/base.js" defer></script>
-        <script src="../../../search/main.js" defer></script>
 
-        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="searchModalLabel">Search</h4>
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-            </div>
-            <div class="modal-body">
-                <p>From here you can search these documents. Enter your search terms below.</p>
-                <form>
-                    <div class="form-group">
-                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
-                    </div>
-                </form>
-                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
-            </div>
-            <div class="modal-footer">
-            </div>
-        </div>
-    </div>
-</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+        <div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">

@@ -121,11 +121,6 @@
                         </ul>
 
                     <ul class="nav navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
-                                <i class="fa fa-search"></i> Search
-                            </a>
-                        </li>
                             <li class="nav-item">
                                 <a rel="prev" href="../arrays/exercises/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
@@ -197,25 +192,25 @@
 Comments can be divided into two types:</p>
 <p><strong>Single-line:</strong>
 Single line comments can only span across one line and are denoted by a <code>//</code>
-<em>example:</em>
-<div class="highlight"><pre><span></span><code><span class="c1">// This is a single line comment</span><span class="w"></span>
-</code></pre></div></p>
+<em>example:</em></p>
+<pre><code class="language-js">// This is a single line comment
+</code></pre>
 <p>Single line comments can also be written after code</p>
-<p><em>example:</em>
-<div class="highlight"><pre><span></span><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Hello, World!&quot;</span><span class="p">);</span><span class="w"> </span><span class="c1">// a single-line comment after some code</span><span class="w"></span>
-</code></pre></div>
-<strong>Multi-line</strong>
+<p><em>example:</em></p>
+<pre><code class="language-js">console.log(&quot;Hello, World!&quot;); // a single-line comment after some code
+</code></pre>
+<p><strong>Multi-line</strong>
 Multi line comments can span across multiple lines and start with a <code>/*</code> and end with a <code>*/</code></p>
-<p><em>example:</em>
-<div class="highlight"><pre><span></span><code><span class="cm">/* This </span>
-<span class="cm">is a multi-line</span>
-<span class="cm">comment */</span><span class="w"></span>
-</code></pre></div>
-They can also go after code</p>
-<div class="highlight"><pre><span></span><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Hello, World!&quot;</span><span class="p">);</span><span class="w"> </span><span class="cm">/* A multi-line</span>
-<span class="cm">comment after</span>
-<span class="cm">some code */</span><span class="w"></span>
-</code></pre></div>
+<p><em>example:</em></p>
+<pre><code class="language-js">/* This 
+is a multi-line
+comment */
+</code></pre>
+<p>They can also go after code</p>
+<pre><code class="language-js">console.log(&quot;Hello, World!&quot;); /* A multi-line
+comment after
+some code */
+</code></pre>
 <h2 id="variables">Variables</h2>
 <p>A variable is a box in which data can be stored, they can be initialised with and without data.
 There are two ways to declare variables in javascript
@@ -226,27 +221,27 @@ you cannot name a variable that starts with a number.</p>
 <p>A list of resereved words can be found <a href="https://www.w3schools.com/js/js_reserved.asp">here</a></p>
 <p>It is best practice to define variables in camelCase, by capitalising the second letter of each word</p>
 <p>The <code>var</code> keyword defines a variable in the current scope, but we needn't worry about that now.</p>
-<p><em>using var with no initial value</em>
-<div class="highlight"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="nx">variableName</span><span class="p">;</span><span class="w"></span>
-</code></pre></div></p>
-<p><em>using var with an initial value</em>
-<div class="highlight"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="nx">variableName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">10</span><span class="p">;</span><span class="w"></span>
-</code></pre></div>
-The <code>let</code> keyword defines a variable in the global scope, again don't worry about that now.</p>
-<p><em>using let with no initial value</em>
-<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">variableName</span><span class="p">;</span><span class="w"></span>
-</code></pre></div></p>
-<p><em>using let with an initial value</em>
-<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">variableName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">10</span><span class="p">;</span><span class="w"></span>
-</code></pre></div></p>
+<p><em>using var with no initial value</em></p>
+<pre><code class="language-js">var variableName;
+</code></pre>
+<p><em>using var with an initial value</em></p>
+<pre><code class="language-js">var variableName = 10;
+</code></pre>
+<p>The <code>let</code> keyword defines a variable in the global scope, again don't worry about that now.</p>
+<p><em>using let with no initial value</em></p>
+<pre><code class="language-js">let variableName;
+</code></pre>
+<p><em>using let with an initial value</em></p>
+<pre><code class="language-js">let variableName = 10;
+</code></pre>
 <h2 id="constants">Constants</h2>
 <p>A constant is like a variable except for the fact it cannot be changed.
 constants are declared using the <code>const</code> keyword.</p>
 <p>It is best practice to define your constants in UPPER_SNAKE_CASE, 
 using uppercase and seperating words with <code>_</code>'s</p>
-<p><em>example:</em>
-<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">CONSTANT_NAME</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">10</span><span class="p">;</span><span class="w"></span>
-</code></pre></div></p>
+<p><em>example:</em></p>
+<pre><code class="language-js">const CONSTANT_NAME = 10;
+</code></pre>
 <h2 id="datatypes">Datatypes</h2>
 <p>All datatypes can be set as the value for a variable or a constant</p>
 <p>There are 7 primitive data types in Javascript:</p>
@@ -270,31 +265,31 @@ using uppercase and seperating words with <code>_</code>'s</p>
 <p>strings are used to store text.
 they are created by putting the desired value into <code>"</code>.
 or by calling the <code>String()</code> constructor.</p>
-<p><em>example:</em>
-<div class="highlight"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="nx">myString</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;This is a string&quot;</span><span class="w"></span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="ow">typeof</span><span class="w"> </span><span class="nx">myString</span><span class="p">)</span><span class="w"> </span><span class="c1">// string</span><span class="w"></span>
-</code></pre></div></p>
+<p><em>example:</em></p>
+<pre><code class="language-js">var myString = &quot;This is a string&quot;
+console.log(typeof myString) // string
+</code></pre>
 <h3 id="numbers">Numbers</h3>
 <p>numbers are used to store well numbers,
 you needn't wrap them in anything just leave them as they are.
 they can also be made by calling the <code>Number()</code> constructor</p>
-<p><em>example:</em>
-<div class="highlight"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="nx">myNumber</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">10</span><span class="w"></span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="ow">typeof</span><span class="w"> </span><span class="nx">myNumber</span><span class="p">)</span><span class="w"> </span><span class="c1">// number</span><span class="w"></span>
-</code></pre></div></p>
+<p><em>example:</em></p>
+<pre><code class="language-js">var myNumber = 10
+console.log(typeof myNumber) // number
+</code></pre>
 <h3 id="booleans">Booleans</h3>
 <p>booleans are used to store true/false data
 there are only two booleans <code>true</code> and <code>false</code>
 they are used in <code>if</code> statements and <code>for</code> loops.
 they can be made using the <code>Boolean()</code> constructor
 or by using a comparotor like <code>==</code></p>
-<p><em>example:</em>
-<div class="highlight"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="nx">myBoolean</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="w"></span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="ow">typeof</span><span class="w"> </span><span class="nx">myBoolean</span><span class="p">)</span><span class="w"> </span><span class="c1">// boolean</span><span class="w"></span>
+<p><em>example:</em></p>
+<pre><code class="language-js">var myBoolean = true
+console.log(typeof myBoolean) // boolean
 
-<span class="nx">myBoolean</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1</span><span class="o">==</span><span class="mf">2</span><span class="w"> </span><span class="c1">// false</span><span class="w"></span>
-<span class="nx">coneole</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="ow">typeof</span><span class="w"> </span><span class="nx">myBoolean</span><span class="p">)</span><span class="w"> </span><span class="c1">// boolean</span><span class="w"></span>
-</code></pre></div></p></div>
+myBoolean = 1==2 // false
+coneole.log(typeof myBoolean) // boolean
+</code></pre></div>
             </div>
         </div>
 
@@ -307,29 +302,8 @@ or by using a comparotor like <code>==</code></p>
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
         <script src="../../js/base.js" defer></script>
-        <script src="../../search/main.js" defer></script>
 
-        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="searchModalLabel">Search</h4>
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-            </div>
-            <div class="modal-body">
-                <p>From here you can search these documents. Enter your search terms below.</p>
-                <form>
-                    <div class="form-group">
-                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
-                    </div>
-                </form>
-                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
-            </div>
-            <div class="modal-footer">
-            </div>
-        </div>
-    </div>
-</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+        <div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">

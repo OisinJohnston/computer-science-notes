@@ -121,11 +121,6 @@
                         </ul>
 
                     <ul class="nav navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
-                                <i class="fa fa-search"></i> Search
-                            </a>
-                        </li>
                             <li class="nav-item">
                                 <a rel="prev" href="../basics/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
@@ -186,62 +181,62 @@
 <h1 id="for-loops">For loops</h1>
 <p><strong>Relavent webdocs found <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration#for_statement">here</a>.</strong></p>
 <h2 id="syntax">Syntax:</h2>
-<div class="highlight"><pre><span></span><code><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="nx">initiator</span><span class="p">;</span><span class="w"> </span><span class="nx">test</span><span class="p">;</span><span class="w"> </span><span class="nx">incStatement</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="cm">/*Code in here will run if the test condition is true*/</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
-</code></pre></div>
+<pre><code class="language-js">for (initiator; test; incStatement) {
+    /*Code in here will run if the test condition is true*/
+}
+</code></pre>
 <p><strong>initiator</strong>: this step executes first. it only executes once. you can declare and initialize a loop control variable here.
 it is optional, but you must end it with a semi-colon.</p>
 <p><strong>test</strong>: if the test condition is true the block of code executes otherwise it does not.</p>
 <p><strong>incStatement</strong>: this step executes at the end of every loop this is also optional but a semi-colon must also be placed at the end.</p>
 <h2 id="example">Example:</h2>
-<p><em>Example of a typical for loop:</em>
-<div class="highlight"><pre><span></span><code><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">i</span><span class="o">=</span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">&lt;</span><span class="mf">2</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">){</span><span class="w"></span>
-<span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Hello &quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">i</span><span class="p">)</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
-</code></pre></div></p>
-<p><em>Example of a for loop without an initiator:</em>
-<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">j</span><span class="o">=</span><span class="mf">0</span><span class="p">;</span><span class="w"></span>
-<span class="k">for</span><span class="w"> </span><span class="p">(;</span><span class="nx">j</span><span class="o">&lt;</span><span class="mf">2</span><span class="p">;</span><span class="nx">j</span><span class="o">++</span><span class="p">){</span><span class="w"></span>
-<span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Hello &quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">j</span><span class="p">)</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
-</code></pre></div></p>
-<p><em>Example of a for loop without an initiator or a incStatement:</em>
-<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">k</span><span class="o">=</span><span class="mf">0</span><span class="p">;</span><span class="w"></span>
-<span class="k">for</span><span class="w"> </span><span class="p">(;</span><span class="nx">k</span><span class="o">&lt;</span><span class="mf">2</span><span class="p">;)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Hello &quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">k</span><span class="p">)</span><span class="w"></span>
-<span class="w">    </span><span class="nx">k</span><span class="o">++</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
-</code></pre></div>
-<strong>NB: this example is the same as the following while loop:</strong>
-<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">k</span><span class="o">=</span><span class="mf">0</span><span class="p">;</span><span class="w"></span>
-<span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="nx">k</span><span class="o">&lt;</span><span class="mf">2</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Hello &quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">k</span><span class="p">)</span><span class="w"></span>
-<span class="w">    </span><span class="nx">k</span><span class="o">++</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
-</code></pre></div></p>
+<p><em>Example of a typical for loop:</em></p>
+<pre><code class="language-js">for (let i=0; i&lt;2; i++){
+    console.log(&quot;Hello &quot;, i)
+}
+</code></pre>
+<p><em>Example of a for loop without an initiator:</em></p>
+<pre><code class="language-js">let j=0;
+for (;j&lt;2;j++){
+    console.log(&quot;Hello &quot;, j)
+}
+</code></pre>
+<p><em>Example of a for loop without an initiator or a incStatement:</em></p>
+<pre><code class="language-js">let k=0;
+for (;k&lt;2;) {
+    console.log(&quot;Hello &quot;, k)
+    k++
+}
+</code></pre>
+<p><strong>NB: this example is the same as the following while loop:</strong></p>
+<pre><code class="language-js">let k=0;
+while (k&lt;2) {
+    console.log(&quot;Hello &quot;, k)
+    k++
+}
+</code></pre>
 <h2 id="exercises">Exercises</h2>
 <p>The exercises can be found <a href="./exercises">here</a></p>
 <h2 id="break-statements">Break statements</h2>
 <p>Break statements are used to exit loops </p>
-<p><em>example of a for loop with a break statement</em>
-<div class="highlight"><pre><span></span><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;entering loop&quot;</span><span class="p">)</span><span class="w"></span>
+<p><em>example of a for loop with a break statement</em></p>
+<pre><code class="language-js">console.log(&quot;entering loop&quot;)
 
-<span class="k">for</span><span class="p">(</span><span class="nx">h</span><span class="o">=</span><span class="mf">0</span><span class="p">;</span><span class="nx">h</span><span class="o">&lt;</span><span class="mf">20</span><span class="p">;</span><span class="nx">h</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="k">if</span><span class="p">(</span><span class="nx">h</span><span class="o">==</span><span class="mf">5</span><span class="p">)</span><span class="w"> </span><span class="k">break</span><span class="p">;</span><span class="w"></span>
-<span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">h</span><span class="p">)</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
-</code></pre></div></p>
+for(h=0;h&lt;20;h++) {
+    if(h==5) break;
+    console.log(h)
+}
+</code></pre>
 <h2 id="continue-statements">Continue statements</h2>
 <p><code>continue</code> statements are used to skip the rest of this iteration</p>
-<p><em>example of a for loop with a continue statement</em>
-<div class="highlight"><pre><span></span><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;entering loop&quot;</span><span class="p">)</span><span class="w"></span>
+<p><em>example of a for loop with a continue statement</em></p>
+<pre><code class="language-js">console.log(&quot;entering loop&quot;)
 
-<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="nx">h</span><span class="o">=</span><span class="mf">0</span><span class="p">;</span><span class="nx">h</span><span class="o">&lt;</span><span class="mf">20</span><span class="p">;</span><span class="nx">h</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">h</span><span class="o">==</span><span class="mf">5</span><span class="p">)</span><span class="w"> </span><span class="k">continue</span><span class="p">;</span><span class="w"></span>
-<span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">h</span><span class="p">)</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
-</code></pre></div></p></div>
+for (h=0;h&lt;20;h++) {
+    if (h==5) continue;
+    console.log(h)
+}
+</code></pre></div>
             </div>
         </div>
 
@@ -254,29 +249,8 @@ it is optional, but you must end it with a semi-colon.</p>
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
         <script src="../../js/base.js" defer></script>
-        <script src="../../search/main.js" defer></script>
 
-        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="searchModalLabel">Search</h4>
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-            </div>
-            <div class="modal-body">
-                <p>From here you can search these documents. Enter your search terms below.</p>
-                <form>
-                    <div class="form-group">
-                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
-                    </div>
-                </form>
-                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
-            </div>
-            <div class="modal-footer">
-            </div>
-        </div>
-    </div>
-</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+        <div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">

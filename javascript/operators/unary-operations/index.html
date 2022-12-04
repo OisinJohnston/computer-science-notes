@@ -121,11 +121,6 @@
                         </ul>
 
                     <ul class="nav navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
-                                <i class="fa fa-search"></i> Search
-                            </a>
-                        </li>
                             <li class="nav-item">
                                 <a rel="prev" href="../math-operations/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
@@ -190,15 +185,15 @@
 <li>After (<code>x++</code>): This returns the value (<code>x</code>) and then adds one.</li>
 <li>Before (<code>++x</code>): This adds one to the variable (<code>x+1</code>) and then returns it.</li>
 </ul>
-<p><em>After example:</em>
-<div class="highlight"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="nx">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">10</span><span class="p">;</span><span class="w"> </span><span class="c1">// x = 10</span><span class="w"></span>
-<span class="kd">var</span><span class="w"> </span><span class="nx">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">x</span><span class="o">++</span><span class="p">;</span><span class="w"> </span><span class="c1">// y = 10 and x = 11</span><span class="w"></span>
-</code></pre></div>
-<code>y</code> is set to 10 and then one is added to x</p>
-<p><em>Before example:</em>
-<div class="highlight"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="nx">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">10</span><span class="p">;</span><span class="w"> </span><span class="c1">// x = 10</span><span class="w"></span>
-<span class="kd">var</span><span class="w"> </span><span class="nx">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">++</span><span class="nx">x</span><span class="p">;</span><span class="w"> </span><span class="c1">// x = 11 and y = 11</span><span class="w"></span>
-</code></pre></div></p>
+<p><em>After example:</em></p>
+<pre><code class="language-js">var x = 10; // x = 10
+var y = x++; // y = 10 and x = 11
+</code></pre>
+<p><code>y</code> is set to 10 and then one is added to x</p>
+<p><em>Before example:</em></p>
+<pre><code class="language-js">var x = 10; // x = 10
+var y = ++x; // x = 11 and y = 11
+</code></pre>
 <h2 id="decrement-">Decrement (<code>--</code>)</h2>
 <p>The decrement operator (<code>--</code>) removes one from it's subject and returns the value</p>
 <p>Like the <a href="./#increment">increment operator</a> it can be put before and after it's subject:</p>
@@ -206,14 +201,14 @@
 <li>After (<code>x--</code>): This returns the value (<code>x</code>) and then removes one.</li>
 <li>Before (<code>--x</code>): This removes one from the variable (<code>x-1</code>) and then returns it.</li>
 </ul>
-<p><em>After example:</em>
-<div class="highlight"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="nx">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">10</span><span class="p">;</span><span class="w"> </span><span class="c1">// x = 10</span><span class="w"></span>
-<span class="kd">var</span><span class="w"> </span><span class="nx">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">x</span><span class="o">--</span><span class="p">;</span><span class="w"> </span><span class="c1">// y = 10 and x = 9</span><span class="w"></span>
-</code></pre></div></p>
-<p><em>Before example:</em>
-<div class="highlight"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="nx">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">10</span><span class="p">;</span><span class="w"> </span><span class="c1">// x = 10</span><span class="w"></span>
-<span class="kd">var</span><span class="w"> </span><span class="nx">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">--</span><span class="nx">x</span><span class="p">;</span><span class="w"> </span><span class="c1">// y = 9 and x = 9</span><span class="w"></span>
-</code></pre></div></p></div>
+<p><em>After example:</em></p>
+<pre><code class="language-js">var x = 10; // x = 10
+var y = x--; // y = 10 and x = 9
+</code></pre>
+<p><em>Before example:</em></p>
+<pre><code class="language-js">var x = 10; // x = 10
+var y = --x; // y = 9 and x = 9
+</code></pre></div>
             </div>
         </div>
 
@@ -226,29 +221,8 @@
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
         <script src="../../../js/base.js" defer></script>
-        <script src="../../../search/main.js" defer></script>
 
-        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="searchModalLabel">Search</h4>
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-            </div>
-            <div class="modal-body">
-                <p>From here you can search these documents. Enter your search terms below.</p>
-                <form>
-                    <div class="form-group">
-                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
-                    </div>
-                </form>
-                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
-            </div>
-            <div class="modal-footer">
-            </div>
-        </div>
-    </div>
-</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+        <div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
