@@ -7,3 +7,5 @@
 * **[for loops](./for-loops)**
 
 * **[if statements](./if-statements)**
+
+* **[arrays](./arrays)**
