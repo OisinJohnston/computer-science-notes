@@ -133,5 +133,58 @@ stop
 @enduml
 ```
 
+*A simple flowchart for a switch statement:*
+```puml
+@startuml
+start
+if (case 1) then (matches)
+    :Statements; break;;
+(doesn't match) elseif (case 2) then (matches)
+    :Statements; break;;
+(doesn't match) elseif (case 3) then (matches)
+    :Statements; break;;
+(doesn't match) elseif (case n) then (matches)
+    :Statements; break;;
+else (doesn't match)
+    :Default statements;
+endif
+stop
+
+@enduml
+```
+
+*A simple flowchart for a for loop:*
+```puml
+@startuml
+start
+:initialisation Expression;
+while (test condition) is (true)
+    :for loop body;
+    :update expression;
+endwhile (false)
+
+stop
+@enduml
+```
+
+*A simple flowchart for a while loop:*
+```puml
+@startuml
+start
+while (test condition) is (true)
+    :while loop body;
+endwhile (false)
+stop
+@enduml
+``` 
+*A simple flowchart for a do while loop*
+```puml
+start
+repeat
+    :while loop body;
+repeat while (test condition) is (true)
+->false;
+stop
+```
 
 
