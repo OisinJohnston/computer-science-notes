@@ -4,5 +4,5 @@ site_url:  "https://oisinjohnston.github.io/computer-science-notes/"
 plugins:
   - plantuml:
       puml_url: https://www.plantuml.com/plantuml/
-      num_worker: 8
+      num_workers: 8
 
