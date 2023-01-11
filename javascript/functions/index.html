@@ -6,9 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         
-        <link rel="canonical" href="https://oisinjohnston.github.io/computer-science-notes/javascript/operators/">
+        <link rel="canonical" href="https://oisinjohnston.github.io/computer-science-notes/javascript/functions/">
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>Javascript Operators - Computer Science Notes</title>
+        <title>Functions - Computer Science Notes</title>
         <link href="../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
@@ -96,7 +96,7 @@
     <ul class="dropdown-menu">
             
 <li>
-    <a href="../functions/" class="dropdown-item">Functions</a>
+    <a href="./" class="dropdown-item active">Functions</a>
 </li>
     </ul>
   </li>
@@ -106,23 +106,23 @@
     <ul class="dropdown-menu">
             
 <li>
-    <a href="./" class="dropdown-item active">Javascript Operators</a>
+    <a href="../operators/" class="dropdown-item">Javascript Operators</a>
 </li>
             
 <li>
-    <a href="assignment-operations/" class="dropdown-item">Assignment Operations</a>
+    <a href="../operators/assignment-operations/" class="dropdown-item">Assignment Operations</a>
 </li>
             
 <li>
-    <a href="comparison-operations/" class="dropdown-item">Comparison Operations</a>
+    <a href="../operators/comparison-operations/" class="dropdown-item">Comparison Operations</a>
 </li>
             
 <li>
-    <a href="math-operations/" class="dropdown-item">Math Operations</a>
+    <a href="../operators/math-operations/" class="dropdown-item">Math Operations</a>
 </li>
             
 <li>
-    <a href="unary-operations/" class="dropdown-item">Unary Operations</a>
+    <a href="../operators/unary-operations/" class="dropdown-item">Unary Operations</a>
 </li>
     </ul>
   </li>
@@ -132,12 +132,12 @@
 
                     <ul class="nav navbar-nav ml-auto">
                             <li class="nav-item">
-                                <a rel="prev" href="../functions/" class="nav-link">
+                                <a rel="prev" href="../for-loops/exercises/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="assignment-operations/" class="nav-link">
+                                <a rel="next" href="../operators/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -159,8 +159,24 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#javascript-operators" class="nav-link">Javascript Operators</a>
+            <li class="nav-item" data-level="1"><a href="#functions" class="nav-link">Functions</a>
               <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#what-is-a-function" class="nav-link">What is a function?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#why-use-functions" class="nav-link">Why use functions?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#function-definition" class="nav-link">Function definition</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#pass-by-value-and-pass-by-reference" class="nav-link">Pass by value and pass by reference</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
               </ul>
             </li>
         </ul>
@@ -168,14 +184,133 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="javascript-operators">Javascript Operators</h1>
-<p>There are many different types of javascript operators including:</p>
+<h1 id="functions">Functions</h1>
+<h2 id="what-is-a-function">What is a function?</h2>
+<p>A function is a self contained piece of code that carries out a particular task.</p>
+<h2 id="why-use-functions">Why use functions?</h2>
 <ul>
-<li><a href="./math-operations">math operations</a></li>
-<li><a href="./assignment-operations">assignment operators</a></li>
-<li><a href="./unary-operations">unary operators</a></li>
-<li><a href="./comparison-operations">comparison operators</a></li>
-</ul></div>
+<li>
+<p>Allow us to do modular programming i.e. to seperate the program into independent modules or pieces - each of which performs a specific task</p>
+</li>
+<li>
+<p>Reusable to assist in avoiding:</p>
+<ul>
+<li>Wasting time retyping code</li>
+<li>Copying ans pasting errors</li>
+<li>Time updating the same piece of code in multiple places.</li>
+</ul>
+</li>
+</ul>
+<h2 id="function-definition">Function definition</h2>
+<p>Before we can use a function, we must define it</p>
+<ul>
+<li>
+<p>an easy way to define a function in javascript is using the function keyword followed by:</p>
+</li>
+<li>
+<p>a unique function name followed by round brackets ()</p>
+</li>
+<li>
+<p>A list of parameters if required</p>
+</li>
+<li>
+<p>A statement block surrounded by curly braces</p>
+</li>
+<li>
+<p>A return statement if required</p>
+</li>
+</ul>
+<p>The simplest way to define a function is this:</p>
+<pre><code class="language-js">function function_name(parameter_1, parameter_2) {
+    // the code in our function goes here
+    console.log(parameter_1);
+    return parameter_2; // we can also return values to the caller
+}
+</code></pre>
+<p>Now if we want to call this function we simply do the following:</p>
+<pre><code class="language-js">x = function_name(&quot;bob&quot;, &quot;dylan&quot;)
+
+console.log(x) // dylan
+</code></pre>
+<p>the arguments for a function are the values passed into the function</p>
+<p>we can use the parameters passed into our function to influence the output:</p>
+<pre><code class="language-js">function greeter(name) { 
+    return &quot;Hello, &quot; + name
+}
+</code></pre>
+<p>Here is a simple example of a function that squares a number:</p>
+<pre><code class="language-js">function square(number) {
+    return number**2
+}
+</code></pre>
+<h2 id="pass-by-value-and-pass-by-reference">Pass by value and pass by reference</h2>
+<ul>
+<li>
+<p>When you call a function and you type in the arguments, the arguments are said to be passed to the function where they are processed</p>
+</li>
+<li>
+<p>There are two ways of doing this pass by value pass by reference</p>
+</li>
+</ul>
+<h3 id="pass-by-value">Pass by value</h3>
+<ul>
+<li>
+<p>in Pass by value, a copy of the argument is made to a new memory location.</p>
+</li>
+<li>
+<p>The values in this location are passed into the function and the original value is not changed by any processing done in the function.</p>
+</li>
+</ul>
+<p><em>pass by value example:</em></p>
+<p><strong>code:</strong></p>
+<pre><code class="language-js">function call_me(params) {
+    params++
+    console.log(&quot;params number is: &quot;, params)
+}
+
+x = 10;
+console.log(&quot;Starting number is: &quot;, x);
+call_me(x)
+console.log(&quot;Ending number is: &quot;, x);
+</code></pre>
+<p><strong>output:</strong></p>
+<pre><code>- Starting number is: 10
+
+- params number is: 11
+
+- Ending number is: 10
+</code></pre>
+<p>as you can see only the value of <code>x</code>is passed into the function and the global variable <code>x</code> never has its value changed
+this is because it is a number and number and all primitives in javascript operate on a pass by value basis.</p>
+<h3 id="pass-by-reference">Pass by reference</h3>
+<ul>
+<li>
+<p>In pass by reference, the location of the argument in memory is passed into the function and the original value is changed by any processing done in the function.</p>
+</li>
+<li>
+<p>There is no new memory used.</p>
+</li>
+</ul>
+<p>Arrays and other non-primitive types operate on a pass by reference basis:</p>
+<p><em>example:</em></p>
+<p><strong>code:</strong></p>
+<pre><code class="language-js">function call_me(params) {
+    for (i=0; i&lt;params.length; i++) {
+        params[i] = params[i]+1;
+    }
+    console.log(&quot;params &quot;, typeof(params), &quot;is: &quot;, params)
+}
+x = [1,2,3,4,5]
+
+console.log(&quot;Starting array is: &quot;, x)
+call_me(x)
+console.log(&quot;Ending array is: &quot;, x)
+</code></pre>
+<p><strong>output:</strong></p>
+<pre><code>Starting array is: [1, 2, 3, 4, 5]
+params object is: [2, 3, 4, 5, 6]
+Ending array is: [2,3, 4, 5, 6]
+</code></pre></div>
             </div>
         </div>
 
