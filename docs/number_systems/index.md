@@ -5,11 +5,11 @@ Binary number systems have two values - 1 or 0
 
 The number of digits in a number system is its base
 
-Binary is base 2 - {0, 1} - 2
+Binary is base 2 - { 0, 1 } - 2
 
-Decimal is base 10 - {0, 1, 2, 3, 4, 5, 6, 7, 8, 9} - 10
+Decimal is base 10 - { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 } - 10
 
-Hexadecimal is base 16 - {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, a, b, c, d, e, f} - 16
+Hexadecimal is base 16 - { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F } - 16
 
 ## Why do we care about binary numbers?
 We care about binary number systems because it allows for a series of switches to represent numerical values - which mean most computers use it/
@@ -56,5 +56,43 @@ e.g. Number 25:
 | 2    | 1        | 1         |
 | 2    | 0        | 0         |
 
+25 = 10011
 
+
+# Hexadecimal number system
+
+Hexadecimal is base 16 - { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F } - 16
+
+## Why do we care?
+
+Hexadecimal is typically: 
+ * easier for humans to read,
+ * Shorter to write
+ * Has less chance of transcription errors
+
+## Converting from hex to decimal
+
+Works exactly the same as base 2 to base 10 conversions except use powers of 16
+
+4CD in base 10: 
+
+| 1  | 16  | 256  |
+|----|-----|------|
+| 13 | 12  | 4    |
+| 13 | 192 | 1024 |
+
+13 + 192 +1024 = 1229
+
+1AB in base 10:
+
+| 1  | 16  | 256 |
+|----|-----|-----|
+| 11 | 10  | 1   |
+| 11 | 160 | 256 |
+
+011+160+256=427
+
+## Converting Decimal to Hexadecimal
+
+Same as for base 2 just divide by 16 instead of 2
 
