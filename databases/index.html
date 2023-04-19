@@ -137,6 +137,15 @@
   </li>
                                 </ul>
                             </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Number systems <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../number_systems/" class="dropdown-item">Binary Number System</a>
+</li>
+                                </ul>
+                            </li>
                         </ul>
 
                     <ul class="nav navbar-nav ml-auto">
@@ -187,6 +196,18 @@
               </ul>
             </li>
             <li class="nav-item" data-level="2"><a href="#database-types" class="nav-link">Database - types</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#database-integrity" class="nav-link">Database - integrity</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#primary-and-foriegn-keys" class="nav-link">Primary and Foriegn keys</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#database-management-systems" class="nav-link">Database Management Systems</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -300,7 +321,77 @@ Think of a flat file database as a single page in an excel file.</p>
 <p>CSV files are typically used for importing and exporting data from different types of databases.</p>
 <h3 id="relational-databases">Relational databases</h3>
 <p>A type of database that stores and priovides access to data points that are related to one another</p>
-<p><a href="https://www.youtube.com/watch?v=NvrpuBAMddw">video</a></p></div>
+<p><a href="https://www.youtube.com/watch?v=NvrpuBAMddw">video</a></p>
+<h4 id="why-we-need-relationmal-databases">Why we need relationmal databases</h4>
+<p>Because flat file databases are shit
+they can result in duplicated records, they are time consuming to update and can easily lead to inconcistincies, it can also be difficult to extract the relavent data.</p>
+<h2 id="database-integrity">Database - integrity</h2>
+<ul>
+<li>
+<p>All data in the database is up to date</p>
+</li>
+<li>
+<p>There is no repeated data</p>
+</li>
+<li>
+<p>There is no old data that should have been over-written</p>
+</li>
+<li>
+<p>If we update information in one table, it is updated where necessary in all linked tables.</p>
+</li>
+</ul>
+<h2 id="primary-and-foriegn-keys">Primary and Foriegn keys</h2>
+<h3 id="primary-key">Primary key</h3>
+<ul>
+<li>
+<p>A primary key is a field in a database table that acts as a unique identifier for each record</p>
+</li>
+<li>
+<p>The value stored in a primeary key field can never be repeated in another record in the table; this ensures that each record in the table is unique,</p>
+</li>
+<li>
+<p>If there is no unique field that will make a primary key, a composite primary key made out of a selection of fields may be used but it is inadvisable and one should always consider a <a href="https://en.wikipedia.org/wiki/Universally_unique_identifier">UUID</a> or an autoincrementing number first.</p>
+</li>
+</ul>
+<h3 id="foriegn-key">Foriegn Key</h3>
+<ul>
+<li>
+<p>A foreign key is the primary key of one table that appears in another table to make a link between the tables, foriegn keys are used to form relationships between tables.</p>
+</li>
+<li>
+<p>Each table can have one primmary key but many foriegn keys</p>
+</li>
+</ul>
+<h2 id="database-management-systems">Database Management Systems</h2>
+<ul>
+<li>
+<p>A database management system is a aoftewre used to store, retrieve, and run queries on data. A DBMS serves as an interface between an end-user and a database, allowing users to create, read update and delete data in the database.</p>
+</li>
+<li>
+<p>DBMSs also help to maintain the integrity of data in a system</p>
+</li>
+<li>
+<p>Examples of DBMSs include:</p>
+</li>
+<li>
+<p>Access </p>
+</li>
+<li>
+<p>MySQL/MariaDB</p>
+</li>
+<li>
+<p>Postgresql</p>
+</li>
+</ul>
+<h3 id="transactions">Transactions</h3>
+<ul>
+<li>
+<p>A transaction can be a single operation but most have multiple steps</p>
+</li>
+<li>
+<p>e.g transferring money from one account to another, one action will debit the sender account and the other will credit the reciever account, this should be done as one transaction in order to ensure that it can easily be rolled back if needs be.</p>
+</li>
+</ul></div>
             </div>
         </div>
 
