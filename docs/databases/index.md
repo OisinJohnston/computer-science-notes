@@ -96,6 +96,62 @@ CSV files are typically used for importing and exporting data from different typ
 
 A type of database that stores and priovides access to data points that are related to one another
 
-https://www.youtube.com/watch?v=NvrpuBAMddw
+
+[video](https://www.youtube.com/watch?v=NvrpuBAMddw)
+
+#### Why we need relationmal databases
+
+Because flat file databases are shit
+they can result in duplicated records, they are time consuming to update and can easily lead to inconcistincies, it can also be difficult to extract the relavent data.
+
+## Database - integrity
+
+ * All data in the database is up to date
+
+ * There is no repeated data
+
+ * There is no old data that should have been over-written
+
+ * If we update information in one table, it is updated where necessary in all linked tables.
+
+
+## Primary and Foriegn keys
+
+### Primary key
+
+ * A primary key is a field in a database table that acts as a unique identifier for each record
+
+ * The value stored in a primeary key field can never be repeated in another record in the table; this ensures that each record in the table is unique,
+
+ * If there is no unique field that will make a primary key, a composite primary key made out of a selection of fields may be used but it is inadvisable and one should always consider a [UUID](https://en.wikipedia.org/wiki/Universally_unique_identifier) or an autoincrementing number first.
+
+### Foriegn Key
+
+ * A foreign key is the primary key of one table that appears in another table to make a link between the tables, foriegn keys are used to form relationships between tables.
+
+ * Each table can have one primmary key but many foriegn keys
+
+
+## Database Management Systems
+
+ * A database management system is a aoftewre used to store, retrieve, and run queries on data. A DBMS serves as an interface between an end-user and a database, allowing users to create, read update and delete data in the database.
+
+ * DBMSs also help to maintain the integrity of data in a system
+
+ * Examples of DBMSs include:
+   
+   1. Access 
+   
+   2. MySQL/MariaDB
+
+   3. Postgresql
+
+### Transactions
+
+ * A transaction can be a single operation but most have multiple steps
+
+ * e.g transferring money from one account to another, one action will debit the sender account and the other will credit the reciever account, this should be done as one transaction in order to ensure that it can easily be rolled back if needs be.
+
+
 
 
