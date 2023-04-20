@@ -144,6 +144,10 @@
 <li>
     <a href="./" class="dropdown-item active">Binary Number System</a>
 </li>
+                                    
+<li>
+    <a href="homework/" class="dropdown-item">Decimal to Binary:</a>
+</li>
                                 </ul>
                             </li>
                         </ul>
@@ -155,7 +159,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" class="nav-link disabled">
+                                <a rel="next" href="homework/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -212,6 +216,19 @@
               <ul class="nav flex-column">
               </ul>
             </li>
+            <li class="nav-item" data-level="2"><a href="#converting-hex-to-binary" class="nav-link">Converting hex to binary</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#converting-binary-to-hex" class="nav-link">Converting binary to hex</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#why-do-computers-use-binary" class="nav-link">Why do computers use binary?</a>
+              <ul class="nav flex-column">
               </ul>
             </li>
         </ul>
@@ -344,7 +361,70 @@ repeat until the quotient is 0  </p>
 </table>
 <p>011+160+256=427</p>
 <h2 id="converting-decimal-to-hexadecimal">Converting Decimal to Hexadecimal</h2>
-<p>Same as for base 2 just divide by 16 instead of 2</p></div>
+<p>Same as for base 2 just divide by 16 instead of 2</p>
+<h2 id="converting-hex-to-binary">Converting hex to binary</h2>
+<p>Take each digit in the hex number, convert each digit to decimal and the nconvert to hex</p>
+<p>Note: every hex digit needs to be representd by 4 binary digits if your conversion has less than 4 digits pad to the left with 0s</p>
+<p><em>examples:</em></p>
+<pre><code>53:
+
+5:
+0101
+
+3:
+0011
+
+53 = 1010011
+
+2AF:
+
+2:
+0010
+
+A:
+1010
+
+F:
+1111
+
+2AF: 001010101111
+</code></pre>
+<h2 id="converting-binary-to-hex">Converting binary to hex</h2>
+<p>Take each group of four binary digits - if short pad with 0's
+Write each digit as it's base 10 value, write each base 10 digit as it's hex value.</p>
+<p><em>example:</em></p>
+<pre><code>0010 1101
+
+0010 = 2
+
+1101 = 13 = D
+
+Bin2Hex(00101101) = 2D
+
+0010 1011
+
+0010 = 2
+
+1011 = 11 = B
+
+Bin2Hex(00101011) = 2B
+
+</code></pre>
+<h1 id="why-do-computers-use-binary">Why do computers use binary?</h1>
+<ul>
+<li>
+<p>The computer processor is built on a series of transistors which have an on/off state</p>
+</li>
+<li>
+<p>The on state represents 1 in boolean algebra or electricity flowing above a certain voltage level in our circuit</p>
+</li>
+<li>
+<p>The off state represents a 0 in boolean algebra or electricity not flowing or flowing below a certain voltage in our circuit</p>
+</li>
+<li>
+<p>Computers can transmit and recieve binary easily</p>
+</li>
+</ul></div>
             </div>
         </div>
 
