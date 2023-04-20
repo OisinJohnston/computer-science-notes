@@ -96,3 +96,73 @@ Works exactly the same as base 2 to base 10 conversions except use powers of 16
 
 Same as for base 2 just divide by 16 instead of 2
 
+
+## Converting hex to binary
+
+Take each digit in the hex number, convert each digit to decimal and the nconvert to hex
+
+Note: every hex digit needs to be representd by 4 binary digits if your conversion has less than 4 digits pad to the left with 0s
+
+*examples:*
+```
+53:
+
+5:
+0101
+
+3:
+0011
+
+53 = 1010011
+
+2AF:
+
+2:
+0010
+
+A:
+1010
+
+F:
+1111
+
+2AF: 001010101111
+```
+
+## Converting binary to hex
+
+Take each group of four binary digits - if short pad with 0's
+Write each digit as it's base 10 value, write each base 10 digit as it's hex value.
+
+*example:*
+```
+0010 1101
+
+0010 = 2
+
+1101 = 13 = D
+
+Bin2Hex(00101101) = 2D
+
+0010 1011
+
+0010 = 2
+
+1011 = 11 = B
+
+Bin2Hex(00101011) = 2B
+
+```
+
+# Why do computers use binary?
+
+* The computer processor is built on a series of transistors which have an on/off state
+
+* The on state represents 1 in boolean algebra or electricity flowing above a certain voltage level in our circuit
+
+* The off state represents a 0 in boolean algebra or electricity not flowing or flowing below a certain voltage in our circuit
+
+* Computers can transmit and recieve binary easily
+
+
+
