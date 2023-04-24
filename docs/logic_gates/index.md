@@ -81,6 +81,31 @@ The **OR** gate has two inputs labelled A and B, it returns 1 if any of the inpu
 | 1 | 1 | 1 |
 
 
+### The **XOR** gate
 
+The **XOR** gate has two inputs and outputs 1 when only one of its inputs is 1
 
+| A | B | Q |
+|---|---|---|
+| 0 | 0 | 0 |
+| 0 | 1 | 1 |
+| 1 | 0 | 1 |
+| 1 | 1 | 0 |
+
+Q = ¬A.B + ¬B.A
+
+Q = !A&B + !B&A
+
+### The **NAND** gate
+
+The **NAND** gate is a combination of the **NOT** gate and the **AND** gate:
+
+| A | B | Q |
+|---|---|---|
+| 0 | 0 | 1 |
+| 1 | 0 | 1 |
+| 0 | 1 | 1 |
+| 1 | 1 | 0 |
+
+The **NAND** gate's truth table is the same as the **AND** gate's truth table just inverted
 
