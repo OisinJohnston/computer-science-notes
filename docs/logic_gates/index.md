@@ -109,3 +109,27 @@ The **NAND** gate is a combination of the **NOT** gate and the **AND** gate:
 
 The **NAND** gate's truth table is the same as the **AND** gate's truth table just inverted
 
+### The **NOR** gate
+
+The **NOR** gate is the combination of a **NOT** gate and an **OR** gate.
+
+| A | B | Q |
+|---|---|---|
+| 0 | 0 | 1 |
+| 1 | 0 | 0 |
+| 0 | 1 | 0 |
+| 1 | 1 | 0 |
+
+Q = ¬(A+B)
+
+
+### The **XNOR** gate
+
+The **XNOR** gate is a combination of a **NOT** gate and an **XOR** gate.
+
+| A | B | Q |
+|---|---|---|
+| 0 | 0 | 1 |
+| 0 | 1 | 0 |
+| 1 | 0 | 0 |
+| 1 | 1 | 1 |
