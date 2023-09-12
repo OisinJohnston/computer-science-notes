@@ -21,6 +21,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://oisinjohnston.github.io/computer-science-notes/history_of_computing/Turing_Machines/</loc>
+         <lastmod>2023-09-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://oisinjohnston.github.io/computer-science-notes/javascript/</loc>
          <lastmod>2023-09-12</lastmod>
          <changefreq>daily</changefreq>

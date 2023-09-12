@@ -6,9 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         
-        <link rel="canonical" href="https://oisinjohnston.github.io/computer-science-notes/logic_gates/logic_circuits/">
+        <link rel="canonical" href="https://oisinjohnston.github.io/computer-science-notes/history_of_computing/Turing_Machines/">
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>Index - Computer Science Notes</title>
+        <title>Turing Machines - Computer Science Notes</title>
         <link href="../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
@@ -51,16 +51,16 @@
 </li>
                                 </ul>
                             </li>
-                            <li class="dropdown">
+                            <li class="dropdown active">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">History of computing <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="../../history_of_computing/" class="dropdown-item">History of Computing</a>
+    <a href="../" class="dropdown-item">History of Computing</a>
 </li>
                                     
 <li>
-    <a href="../../history_of_computing/Turing_Machines/" class="dropdown-item">Turing Machines</a>
+    <a href="./" class="dropdown-item active">Turing Machines</a>
 </li>
                                 </ul>
                             </li>
@@ -137,12 +137,12 @@
   </li>
                                 </ul>
                             </li>
-                            <li class="dropdown active">
+                            <li class="dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Logic gates <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="../" class="dropdown-item">What are logic gates?</a>
+    <a href="../../logic_gates/" class="dropdown-item">What are logic gates?</a>
 </li>
                                     
   <li class="dropdown-submenu">
@@ -150,11 +150,11 @@
     <ul class="dropdown-menu">
             
 <li>
-    <a href="./" class="dropdown-item active">Index</a>
+    <a href="../../logic_gates/logic_circuits/" class="dropdown-item">Index</a>
 </li>
             
 <li>
-    <a href="adder/" class="dropdown-item">Binary Adder</a>
+    <a href="../../logic_gates/logic_circuits/adder/" class="dropdown-item">Binary Adder</a>
 </li>
     </ul>
   </li>
@@ -195,7 +195,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="adder/" class="nav-link">
+                                <a rel="next" href="../../javascript/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -217,232 +217,75 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
+            <li class="nav-item" data-level="1"><a href="#turing-machines" class="nav-link">Turing Machines</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#introduction" class="nav-link">Introduction</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#components-of-a-turing-machine" class="nav-link">Components of a turing machine:</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#turing-machines-operation" class="nav-link">Turing Machines - Operation</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#turing-machines-significance" class="nav-link">Turing machines -- Significance</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
         </ul>
     </div>
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h3 id="logical-circuits">Logical Circuits</h3>
-<p>Logic gates can be combined to form more complex circuits.</p>
-<p><img alt="" src="data:image/gif;base64,R0lGODlhtwCsAPcAAAEBAQICAgMDAwQEBAUFBQYGBgcHBwgICAkJCQoKCgsLCwwMDA0NDQ4ODg8PDxAQEBERERISEhMTExQUFBUVFRYWFhcXFxgYGBkZGRoaGhsbGxwcHB0dHR4eHh8fHyAgICEhISIiIiMjIyQkJCYmJicnJygoKCkpKSoqKisrKywsLC0tLS4uLi8vLzAwMDExMTIyMjMzMzQ0NDU1NTY2Njc3Nzg4ODk5OTo6Ojs7Ozw8PD09PT4+Pj8/P0BAQEFBQUJCQkNDQ0REREVFRUZGRkdHR0hISElJSUpKSktLS0xMTE5OTk9PT1BQUFFRUVJSUlNTU1RUVFVVVVZWVldXV1hYWFlZWVpaWltbW1xcXF1dXV5eXl9fX2BgYGFhYWJiYmNjY2RkZGVlZWZmZmdnZ2hoaGlpaWpqamtra2xsbG1tbW5ubm9vb3BwcHFxcXJycnNzc3R0dHV1dXZ2dnd3d3h4eHl5eXp6ent7e3x8fH19fX5+fn9/f4CAgIGBgYKCgoODg4SEhIWFhYaGhoeHh4iIiImJiYqKiouLi4yMjI2NjY6Ojo+Pj5CQkJGRkZKSkpOTk5SUlJWVlZaWlpeXl5iYmJmZmZqampubm5ycnJ2dnZ6enp+fn6CgoKGhoaKioqOjo6SkpKWlpaampqenp6ioqKmpqaqqqqurq6ysrK2tra6urq+vr7CwsLGxsbKysrOzs7S0tLW1tbe3t7i4uLm5ubq6uru7u7y8vL29vb6+vr+/v8DAwMHBwcLCwsPDw8TExMXFxcbGxsfHx8jIyMnJycrKysvLy8zMzM3Nzc7Ozs/Pz9DQ0NHR0dLS0tPT09TU1NXV1dbW1tfX19jY2NnZ2dvb29zc3N3d3d7e3uDg4OHh4eLi4uPj4+Tk5OXl5ebm5ufn5+jo6Onp6erq6uvr6+zs7O3t7e7u7u/v7/Dw8PHx8fLy8vPz8/T09PX19fb29vf39/j4+Pn5+fr6+vv7+/z8/P39/f7+/v///wAAAAAAAAAAAAAAAAAAAAAAACwAAAAAtwCsAAAI/wDzCRxIsKDBgwgTKlzIsKHDhxAjSpxIsaLFixgzaoxIaMAiNFfkbRxJsqTJk7pkCBTx6qTLlzBjHiRkJp+7Ccpk6tzJ82KTLI7GoHLIrqfRozIxNGvmpJFCd32inpiEtKpVjdwY3Mv3ioPCdnzC8jGC5qrZsxBR/RA4SAjESCjGoZ1Ll+AyISIeIcLCLWK0CqXqCh5MkQoZwogTL6xEwpvix5DzVdMAKrJlxFm+XN5cVxMIbZxDm83mgZPo01W7bEHNuqcnDtday47JTcSl2bhdirGSuzfJURem+R6OMZwJqsSTUzQjRbnziKcmPHtOnWE5FY+qa0+oxsn27wVXOf/ICR68uheKypd/o0Q9eFgKjLnf7m6Gofnb5xjBr32WgWD8UScPDoEESB0eQRj4HC4B9NLQNchEKCEykUynYGL38NDHQtm8EMOHIMaAAQcQJGHNhYjx0QM+CTHTQkLo2DICIygSxgsAuSDkIkNsyFEjYUDgcdCODM3xxo+DDdGBCkw2CcIGDsWADJJ1gbPLM1hmmcoKDm3DBJWPEdlQBt+AmZiYDCURi5mIobnQGEg0IueciUzBplluKlSGDWz06ScbV9Bwp1V5JuTEKgiFgsWgSBWKkAegIdQHH4y+FM836mSqKTAsOHQOEgthEUqlJx2BgAOopqqABQ4NYQtDNBT/QypJXHAx5IsMOWJrQxGcM2tG2HTQiY64KoRIFQ+dE8GvF2USwjYtFnuQND7AEVExgjI7ERZgLFQNC02EK24TLNSQwAu7TKSothBRg8GoDBHDyrz0ssIGLO9YxMeG7DJESQngmCVqvwpNUcZcsRJsEDQUmFIXBOgoPBAkKZAjmLIS5/NEGogRUwPBzECgimKgZMEuIy1E/Ni+zC7RxmVXiEIqMgy4wtkM8g2KSAxFhQbxnUjEgZo5EphJDAKytDaMDVQSUgM8s5X8IxF19LaHHxcCQ0Atw1kxioGA5EBPcjjzB0Qezz2Qjns35vhcOROopyKL1S39XYb8bveJFtox/+hgeXr8cWCC83mt3DwEBijDMYRpgkYjikSBjUS0FACggQ6oI9gZVmyVDx99QURHESjCXVcyCvScjzgQvUNDIT8KcwNdavA2USwJyIqkJ6uhdYTgDcXTyfCdlJEEm4GjVUWBA1mMkDq1clGCj3dWQcpZsuww0CV/L3Qio1KeJQofnQByhT0ZE5R5+oiRQwH7iAWDA/yE8U7/YHkAcr9gVAS2P13h+99cGrCOhOBCdQKMyTgqkBAJJCADQDjDJRCYwJLIDyFX+0YuJGEHBjihFRU8SSd2VRBdrIUgq2CCA/YQwpLggXkEwQcADqIOTgBgEy0cyQdWIIQe+vACa0KIF/9yUI0cZiQYkHDFLZa4xBTgQiHAIEEmjGgSJoBwIWeAHRVHEgZMNIQO1NtiRuwwCIccogh1KIUa11gKX4gRIoco44MIIAQq2PGOVLjPGx2Chkg0ZBgiyEc49miRKThsIbFgGiEv4oN0KUQOX1rkQzIggANY8pICaAlCXCGBQ0jyIbnwQTxGScpyLIBuBQHHEpZgjk92qQMHgUV7CuIJIBzBZq50SAHmcRA4JEIg4fAFFwCwBbflsiEpgAZCOICEGTTgAlEY1jEf0gRWIKQeTgCFMQo4TYjEARHdJIklxhDOkZiwnBvpBpTQqREDiISdGFGBheBpkUPR8yJy8OQ9K3L/CTHssyK78ME/KeINDQyUIgeIx0ElsgJnLDQiTxjZQx9CBy1OtCGYCMNFHcKLHmy0Id/IwEcbggCojVQhLGjGSRUChVSsNCF1IMRLEZKJbs3UIL3gwU0NAg4M7NQgCnDHTwnSAmYMdSBRGMpR80HGpeZDE5pZqi+0t9RwXMCp+VhAO5zqgmU4VQqncOodBOFUTnTBqb/QwSKrAQMvnkQcrFpkLIQQhgpkpyQMoKAYY3G8caiBARbNyAvII9fjCYQddBDAHnh5EUMmBxBRjQxfC2IPPxRADpqjyAuTYw4nuMUykz3IIRyAhoAdRBzFqMdBRqicQhyDBJcJLUIigQEv/8SGIFiwwBR8oLuBACMHyuGGJNxxgNgaViGbEEEVLHQGcAqkCL1doHO8sIhKFKAcCaEHL7ariVhs97vgDa94x0te8ooiFd8thE4bQgoVLEERQhtIM2yw3V4QUDnLqIRAWpCMhJyjBwDeAAwATOACG/jACE5wgkeQAgKrIJAOSUUIdoAcgczCATfoQQaKqJwwMHYJ1pTscRUCihJAQRmOWANB6EEA6pzDDUnAbjRsQIW1QUa2CLFEB7JADYGUA7YDeURZ2InjgjBiAmOAFkGwUQJK6OIRJoNnkdmSgDZg9yDTKMMXfklPHMcjDwCwQ75WGtpzvOEAgEAlmZPgDTNEIBM9P40FCTRQ4Z/iAxZYzbOeSRUQADs=" /></p>
-<p>The circuit above represents 3 logic gates which can be represented using the logic expression blow</p>
-<p>Q = (B*C) + !A</p>
-<p>In order to create a trutnh table we first need to find all possible permutations</p>
-<p>To model every combination we take 2 and raise it to the power of the number of inputs.</p>
-<p>ABC gives us 3 inputs so we need 2^3 rows in our table</p>
-<table>
-<thead>
-<tr>
-<th>A</th>
-<th>B</th>
-<th>C</th>
-<th>B*C</th>
-<th>!A</th>
-<th>(B*C)+!A</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>1</td>
-</tr>
-<tr>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>1</td>
-</tr>
-<tr>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>1</td>
-</tr>
-<tr>
-<td>0</td>
-<td>1</td>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-</tr>
-<tr>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td>1</td>
-<td>1</td>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-</tr>
-</tbody>
-</table>
-<p><em>Example 2:</em></p>
-<p><img alt="" src="./gate2.png" /></p>
-<p>Q =!((!B*A)+(!A*B))</p>
-<table>
-<thead>
-<tr>
-<th>A</th>
-<th>B</th>
-<th>!B</th>
-<th>!A</th>
-<th>!B*A</th>
-<th>!A*B</th>
-<th>!((!B*A)+(!A*B))</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>1</td>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-</tr>
-<tr>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-</tr>
-<tr>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-</tr>
-<tr>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-</tr>
-</tbody>
-</table>
-<p><em>Example 3:</em>
-<img alt="" src="./gate3.png" /></p>
-<p>Q=!(A*(B+C))</p>
-<table>
-<thead>
-<tr>
-<th>A</th>
-<th>B</th>
-<th>C</th>
-<th>(B+C)</th>
-<th>A*(B+C)</th>
-<th>!(A*(B+C))</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-</tr>
-<tr>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-</tr>
-<tr>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-</tr>
-<tr>
-<td>0</td>
-<td>1</td>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-</tr>
-<tr>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-</tr>
-<tr>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-</tr>
-<tr>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-</tr>
-<tr>
-<td>1</td>
-<td>1</td>
-<td>1</td>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-</tr>
-</tbody>
-</table></div>
+<h1 id="turing-machines">Turing Machines</h1>
+<h2 id="introduction">Introduction</h2>
+<p>The Turing Machine was invented in 1936 by Alan Turing.
+It is a basic abstract symbol-manipulating device that can be use to simulate the logic of any computer that could possibly be constructed.</p>
+<p>Although it was never actually constructed by Turing, its theory yeilded many insights.</p>
+<p>A real life implementation of a turing machine:</p>
+<p><img alt="" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Turing_Machine_Model_Davey_2012.jpg/220px-Turing_Machine_Model_Davey_2012.jpg" /></p>
+<p>Anything that can be done on a modern computer could be done on a Turing machine</p>
+<h2 id="components-of-a-turing-machine">Components of a turing machine:</h2>
+<ol>
+<li>
+<p>An infinitely long tape made up of individual cells. Each cell can contain a single character - typically 1, 0 or B</p>
+</li>
+<li>
+<p>A read/write head is pointed at an individual cell</p>
+</li>
+<li>
+<p>A controler (aka finite-state machine) will instruct the read/write head</p>
+</li>
+</ol>
+<h2 id="turing-machines-operation">Turing Machines - Operation</h2>
+<p>Initially the tape is inscribed with a sequence of characters - called the input</p>
+<p>The operation of the turing machine is controlled by the finite state machne (controller)
+The operation takes place as a sequence of streps known as transitions</p>
+<p>The controller decides for a given (input character, state) par, the (output character, state) pair - known as a transition.</p>
+<p>Each transition involves:
+ * Reading.
+ * Writing.
+ * Moving.
+ * Updating</p>
+<p>Transistions can be expressed using:</p>
+<p>State transition tables:
+| Current state | Read (input) | write (output) | Direction to move | Next State |
+|---------------|--------------|----------------|-------------------|------------|
+| S1            | 1            | 0              | Right             | S1         |</p>
+<p>Or using state transition diagrams:</p>
+<div class="puml"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="133px" preserveAspectRatio="true" style="background: #ffffff" version="1.1" viewBox="0 0 83 133" width="83px" zoomAndPan="magnify"><defs/><g><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="65" x2="65" y1="36.2969" y2="98.4297"/><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="24" x="53" y="5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="10" x="60" y="24.9951">A</text><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="24" x="53" y="97.4297"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="10" x="60" y="117.4248">A</text><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="23" x2="65" y1="67.4297" y2="67.4297"/><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="23" x2="23" y1="67.4297" y2="80.4297"/><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="23" x2="64" y1="80.4297" y2="80.4297"/><polygon fill="#181818" points="56,76.4297,66,80.4297,56,84.4297,60,80.4297" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="51" x="14" y="62.3638">(1, 0, R)</text></g></svg></div>
+
+<p>Turing machines - sates</p>
+<p>At any given time, A turing machine is said to be in a particular state. States are usually denoted by the letterS followed by a number e.g. S2 is taken to mean state two
+S0 is conventionally used to denote the initial state. This is the state the TM is in before it starts to operate.</p>
+<p>A double circle s used to denote the final or halting state. This is the state the TM is in when it finishes</p>
+<h2 id="turing-machines-significance">Turing machines -- Significance</h2>
+<p>Computability is defined as a task that can be carried out by a turing machine</p></div>
             </div>
         </div>
 
