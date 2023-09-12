@@ -2,92 +2,112 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://oisinjohnston.github.io/computer-science-notes/</loc>
-         <lastmod>2023-04-24</lastmod>
+         <lastmod>2023-09-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://oisinjohnston.github.io/computer-science-notes/computational_thinking/</loc>
-         <lastmod>2023-04-24</lastmod>
+         <lastmod>2023-09-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://oisinjohnston.github.io/computer-science-notes/databases/</loc>
-         <lastmod>2023-04-24</lastmod>
+         <lastmod>2023-09-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://oisinjohnston.github.io/computer-science-notes/history_of_computing/</loc>
+         <lastmod>2023-09-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://oisinjohnston.github.io/computer-science-notes/javascript/</loc>
-         <lastmod>2023-04-24</lastmod>
+         <lastmod>2023-09-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://oisinjohnston.github.io/computer-science-notes/javascript/arrays/</loc>
-         <lastmod>2023-04-24</lastmod>
+         <lastmod>2023-09-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://oisinjohnston.github.io/computer-science-notes/javascript/arrays/exercises/</loc>
-         <lastmod>2023-04-24</lastmod>
+         <lastmod>2023-09-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://oisinjohnston.github.io/computer-science-notes/javascript/basics/</loc>
-         <lastmod>2023-04-24</lastmod>
+         <lastmod>2023-09-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://oisinjohnston.github.io/computer-science-notes/javascript/for-loops/</loc>
-         <lastmod>2023-04-24</lastmod>
+         <lastmod>2023-09-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://oisinjohnston.github.io/computer-science-notes/javascript/for-loops/exercises/</loc>
-         <lastmod>2023-04-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://oisinjohnston.github.io/computer-science-notes/javascript/functions/</loc>
-         <lastmod>2023-04-24</lastmod>
+         <lastmod>2023-09-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://oisinjohnston.github.io/computer-science-notes/javascript/operators/</loc>
-         <lastmod>2023-04-24</lastmod>
+         <lastmod>2023-09-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://oisinjohnston.github.io/computer-science-notes/javascript/operators/assignment-operations/</loc>
-         <lastmod>2023-04-24</lastmod>
+         <lastmod>2023-09-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://oisinjohnston.github.io/computer-science-notes/javascript/operators/comparison-operations/</loc>
-         <lastmod>2023-04-24</lastmod>
+         <lastmod>2023-09-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://oisinjohnston.github.io/computer-science-notes/javascript/operators/math-operations/</loc>
-         <lastmod>2023-04-24</lastmod>
+         <lastmod>2023-09-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://oisinjohnston.github.io/computer-science-notes/javascript/operators/unary-operations/</loc>
-         <lastmod>2023-04-24</lastmod>
+         <lastmod>2023-09-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://oisinjohnston.github.io/computer-science-notes/logic_gates/</loc>
-         <lastmod>2023-04-24</lastmod>
+         <lastmod>2023-09-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://oisinjohnston.github.io/computer-science-notes/logic_gates/logic_circuits/</loc>
+         <lastmod>2023-09-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://oisinjohnston.github.io/computer-science-notes/logic_gates/logic_circuits/adder/</loc>
+         <lastmod>2023-09-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://oisinjohnston.github.io/computer-science-notes/number_systems/</loc>
-         <lastmod>2023-04-24</lastmod>
+         <lastmod>2023-09-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://oisinjohnston.github.io/computer-science-notes/number_systems/homework/</loc>
-         <lastmod>2023-04-24</lastmod>
+         <lastmod>2023-09-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://oisinjohnston.github.io/computer-science-notes/python/RunningTotals/</loc>
+         <lastmod>2023-09-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://oisinjohnston.github.io/computer-science-notes/python/fileIO/</loc>
+         <lastmod>2023-09-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

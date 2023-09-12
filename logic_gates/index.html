@@ -12,12 +12,9 @@
         <link href="../css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/font-awesome.min.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
-
-        <script src="../js/jquery-1.10.2.min.js" defer></script>
-        <script src="../js/bootstrap.min.js" defer></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
-        <script>hljs.initHighlightingOnLoad();</script> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
     </head>
 
     <body>
@@ -51,6 +48,15 @@
                                     
 <li>
     <a href="../databases/" class="dropdown-item">Databases</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">History of computing <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../history_of_computing/" class="dropdown-item">History of Computing</a>
 </li>
                                 </ul>
                             </li>
@@ -101,16 +107,6 @@
   </li>
                                     
   <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">Functions</a>
-    <ul class="dropdown-menu">
-            
-<li>
-    <a href="../javascript/functions/" class="dropdown-item">Functions</a>
-</li>
-    </ul>
-  </li>
-                                    
-  <li class="dropdown-submenu">
     <a href="#" class="dropdown-item">Operators</a>
     <ul class="dropdown-menu">
             
@@ -144,6 +140,20 @@
 <li>
     <a href="./" class="dropdown-item active">What are logic gates?</a>
 </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Logic circuits</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="logic_circuits/" class="dropdown-item">Index</a>
+</li>
+            
+<li>
+    <a href="logic_circuits/adder/" class="dropdown-item">Binary Adder</a>
+</li>
+    </ul>
+  </li>
                                 </ul>
                             </li>
                             <li class="dropdown">
@@ -159,6 +169,19 @@
 </li>
                                 </ul>
                             </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Python <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../python/RunningTotals/" class="dropdown-item">Running Totals</a>
+</li>
+                                    
+<li>
+    <a href="../python/fileIO/" class="dropdown-item">File Handlers</a>
+</li>
+                                </ul>
+                            </li>
                         </ul>
 
                     <ul class="nav navbar-nav ml-auto">
@@ -168,7 +191,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="../number_systems/" class="nav-link">
+                                <a rel="next" href="logic_circuits/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -408,7 +431,74 @@ therefore we can say that:
 </tr>
 </tbody>
 </table>
-<p>The <strong>NAND</strong> gate's truth table is the same as the <strong>AND</strong> gate's truth table just inverted</p></div>
+<p>The <strong>NAND</strong> gate's truth table is the same as the <strong>AND</strong> gate's truth table just inverted</p>
+<h3 id="the-nor-gate">The <strong>NOR</strong> gate</h3>
+<p>The <strong>NOR</strong> gate is the combination of a <strong>NOT</strong> gate and an <strong>OR</strong> gate.</p>
+<table>
+<thead>
+<tr>
+<th>A</th>
+<th>B</th>
+<th>Q</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<p>Q = ¬(A+B)</p>
+<h3 id="the-xnor-gate">The <strong>XNOR</strong> gate</h3>
+<p>The <strong>XNOR</strong> gate is a combination of a <strong>NOT</strong> gate and an <strong>XOR</strong> gate.</p>
+<table>
+<thead>
+<tr>
+<th>A</th>
+<th>B</th>
+<th>Q</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+</tbody>
+</table></div>
             </div>
         </div>
 
@@ -416,11 +506,13 @@ therefore we can say that:
             <hr>
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
+        <script src="../js/jquery-3.6.0.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
         <script>
             var base_url = "..",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
-        <script src="../js/base.js" defer></script>
+        <script src="../js/base.js"></script>
 
         <div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
     <div class="modal-dialog">
